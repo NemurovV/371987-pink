@@ -180,9 +180,27 @@
 
         <img src="http://placehold.it/150x100" alt="Фотография">
 
-        <div class="">
+        <form class="upload-photos__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="upload-photos__filter--radio">
+            <p class="upload-photos__filter--item">
+              <input  class="upload-photos__filter--resize visually-hidden" type="radio" name="radio-field" id="resize" value="resize">
+              <label class="visually-hidden" for="resize">Обрезать</label>
+            </p>
+            <p class="upload-photos__filter--item">
+              <input  class="upload-photos__fill visually-hidden" type="radio" name="fill-field" id="fill" value="fill">
+              <label class="c" for="fill">Заливка</label>
+            </p>
+            <p class="upload-photos__filter--item">
+              <input  class="upload-photos__contrast visually-hidden"type="radio" name="contrast-field" id="contrast" value="contrast">
+              <label class="visually-hidden" for="contrast">Контраст</label>
+            </p>
+          </div>
 
-        </div>
+          <p class="upload-photos__filter--range">
+            <input type="range" name="range-field" id="range" value="range">
+            <label class="диапазон" for="range">Диапазон</label>
+          </p>
+        </form>
 
         <div class="upload-photos__button">
           <a class="upload-photos__download button" href="#">Запостить</a>
