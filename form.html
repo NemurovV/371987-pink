@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <head class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Пинк">
+      </a>
+      <button  class="main-nav__toggle" type="button">Открыть меню</button>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="phto.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Htmlacademy</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="advertising">
+        <h1 class="page-main__photo--title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+    </head>
+
+    <main class="page-main page-main__form">
+      <section class="promotion__header">
+        <h2 class="visually-hidden">Форма для участия в акции</h2>
+        <p class="promotion__text">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+      </section>
+
+      <form class="promotions__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="promotions__filter--list user-data__list">
+          <legend class="visually hidden">Заполните ФИО</legend>
+          <p class="promotions__filter--item user-data__item">
+            <label class="c" for="surname">Фамилия:</label>
+            <input  class="promotions__filter--surname visually-hidden" type="text" name="surname-field" id="surname" value="Укажите фамилию *">
+          </p>
+          <p class="promotions__filter--item user-data__item">
+            <label class="visually-hidden" for="username">Имя:</label>
+            <input  class="promotions__filter--name visually-hidden" type="text" name="name-field" id="username" value="Введите ваше имя *">
+          </p>
+          <p class="promotions__filter--item user-data__item">
+            <label class="visually-hidden" for="patronymic">Отчество:</label>
+            <input  class="promotions__filter--patronymic visually-hidden"type="text" name="patronymic-field" id="patronymic" value="Ну и отчество тоже">
+          </p>
+        </fieldset>
+
+        <fieldset class="promotions__filter--list achievements__list">
+          <legend class="promotions__filter--title">Ваши безбашенные достижения в путешествии</legend>
+          <p class="promotions__filter--item achievements__item">
+            <input  class="promotions__filter--title visually-hidden" type="checkbox" name="checkbox-one" id="checkbox-one" checked>
+            <label class="visually-hidden" for="checkbox-one">Сделал селфи с акулой</label>
+          </p>
+          <p class="promotions__filter--item achievements__item">
+            <input  class="promotions__filter--title visually-hidden" type="checkbox" name="checkbox-two" id="checkbox" checked>
+            <label class="visually-hidden" for="checkbox-two">Обгорел на пляже</label>
+          </p>
+          <p class="promotions__filter--item achievements__item">
+            <input  class="promotions__filter--title visually-hidden"type="checkbox" name="checkboxt-three" id="checkbox-three">
+            <label class="visually-hidden" for="checkbox-three">Видел Чака Норриса</label>
+          </p>
+          <p class="promotions__filter--item achievements__item">
+            <input  class="promotions__filter--title visually-hidden" type="checkbox" name="checkbox-four" id="checkbox-four">
+            <label class="visually-hidden" for="checkbox-four">Накупил сувениров</label>
+          </p>
+          <p class="promotions__filter--item achievements__item">
+            <input  class="promotions__filter--title visually-hidden" type="checkbox" name="checkbox-five" id="checkbox-five" checked>
+            <label class="visually-hidden" for="checkbox-five">Удержал башню</label>
+          </p>
+          <p class="promotions__filter--item achievements__item">
+            <input  class="promotions__filter--title visually-hidden"type="checkbox" name="checkboxt-six" id="checkbox-six">
+            <label class="visually-hidden" for="checkbox-six">Разгромил отель</label>
+          </p>
+        </fieldset>
+
+        <fieldset class="promotions__filter--list contacts__list">
+          <legend class="visually hidden">Ваши контактные данные</legend>
+          <p class="promotions__filter--item contacts__item">
+            <label class="c" for="phone">Номер телефона</label>
+            <input  class="promotions__filter--surname visually-hidden" type="text" name="phone-field" id="sphone" value="Номер, пожалуйста">
+          </p>
+          <p class="promotions__filter--item contacts__item">
+            <label class="visually-hidden" for="email">Адрес почты</label>
+            <input  class="promotions__filter--name visually-hidden" type="email" name="email-field" id="email" value="Введите почту *">
+          </p>
+        </fieldset>
+
+        <fieldset class="promotions__filter--list app__list">
+          <legend class="promotions__filter--title">С каким приложением путешествовали</legend>
+          <p class="promotions__filter--item app--item">
+            <input  class="app__filter--ios visually-hidden" type="radio" name="radio-field" id="ios" value="ios" checked>
+            <label class="visually-hidden" for="ios">Pink для iOS</label>
+          </p>
+          <p class="promotions__filter--item app--item">
+            <input  class="upload-photos__android visually-hidden" type="radio" name="radio-field" id="android" value="android">
+            <label class="c" for="android">Pink на Android</label>
+          </p>
+          <p class="promotions__filter--item app--item">
+            <input  class="app__windows visually-hidden" type="radio" name="radio-field" id="windows" value="windows">
+            <label class="visually-hidden" for="windows">Windows Phone</label>
+          </p>
+        </fieldset>
+      </form>
+
+      <footer class="page-footer">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Пинк">
+        </a>
+
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+      </footer>
+
+    </main>
+  </body>
+</html>
