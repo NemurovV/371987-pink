@@ -181,29 +181,29 @@
         <img src="http://placehold.it/150x100" alt="Фотография">
 
         <form class="upload-photos__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="upload-photos__filter--radio">
-            <p class="upload-photos__filter--item">
-              <input  class="upload-photos__filter--resize visually-hidden" type="radio" name="radio-field" id="resize" value="resize" checked="">
+          <div class="upload-photos__filters">
+            <p class="upload-photos__filter--resize">
+              <input  class="upload-photos__resize visually-hidden" type="radio" name="radio-field" id="resize" value="resize" checked="">
               <label class="visually-hidden" for="resize">Обрезать</label>
             </p>
-            <p class="upload-photos__filter--item">
+            <p class="upload-photos__filter--fill">
               <input  class="upload-photos__fill visually-hidden" type="radio" name="radio-field" id="fill" value="fill">
               <label class="visually-hidden" for="fill">Заливка</label>
             </p>
-            <p class="upload-photos__filter--item">
+            <p class="upload-photos__filter--contrast">
               <input  class="upload-photos__contrast visually-hidden" type="radio" name="radio-field" id="contrast" value="contrast">
               <label class="visually-hidden" for="contrast">Контраст</label>
             </p>
           </div>
 
-          <p class="upload-photos__filter--range">
+          <p class="upload-photos__range">
             <input type="range" name="range-field" id="range__line">
             <label class="visually-hidden" for="range__line">Диапазон</label>
           </p>
 
           <div class="upload-photos__button">
-            <button class="upload-photos__download--button button">Запостить</button>
-            <button class="upload-photos__cancel--button button">Отмена</button>
+            <button class="button--pink button">Запостить</button>
+            <button class="button-disable button">Отмена</button>
           </div>
         </form>
       </section>
