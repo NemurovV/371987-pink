@@ -1,25 +1,8 @@
 $main-nav: #283645;
 
-.page-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 20px 17px 21px 20px;
-
-  align-items: center;
-  background: $main-nav;
-
-  border-bottom: 1px solid darken($main-nav, 100%);
-}
-
 .main-nav {
+  display: block;
   background: $main-nav;
-}
-
-.page-header__logo {
-  display: inline-block;
-
-  vertical-align: top;
 }
 
 .main-nav__toggle {
@@ -27,13 +10,16 @@ $main-nav: #283645;
   display: inline-block;
 
   width: 30px;
-  height: 30px;
+  height: 4px;
 
+  font-size: 0;
   color: $main-nav;
 
-  background: none;
+  background: #ffffff;
 
   border: 0;
+
+  cursor: pointer;
 }
 
 .main-nav__toggle::before,
@@ -41,24 +27,23 @@ $main-nav: #283645;
   content: "";
 
   position: absolute;
-  top: 12px;
+  top: 0px;
   right: 0px;
 
-  display: block;
   width: 30px;
   height: 4px;
 
   background-color: #ffffff;
+  outline: inherit;
 }
 
 .main-nav__toggle::before {
-  transform: rotate(45deg);
+  top: -10px;
 }
 
 .main-nav__toggle::after {
-  transform: rotate(-45deg);
+  top: 10px;
 }
-
 
 .site-list {
   margin: 0;
@@ -68,12 +53,12 @@ $main-nav: #283645;
   text-align: center;
 
   & a {
-
     font-family: inherit;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: inherit;
     color: #ffffff;
+
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -84,5 +69,4 @@ $main-nav: #283645;
 
   border-bottom: 1px solid darken($main-nav, 100%);
   border-top: 1px solid lighten($main-nav, 10%);
-
 }

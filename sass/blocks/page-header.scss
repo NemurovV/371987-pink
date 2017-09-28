@@ -1,0 +1,13 @@
+$main-nav: #283645;
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 21px 17px 25px 20px;
+
+  align-items: center;
+  background: $main-nav;
+
+  border-bottom: 1px solid darken($main-nav, 100%);
+}
