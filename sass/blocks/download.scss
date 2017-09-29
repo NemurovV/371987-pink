@@ -1,6 +1,6 @@
 .download {
 
-  padding-top: 26px;
+  padding-top: 27px;
 
   color: #ffffff;
   text-align: center;
@@ -11,10 +11,10 @@
 .download__list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 
   width: 208px;
-  margin: 0 auto 23px;
+  margin: 0 auto 19px;
   padding: 0;
   list-style: none;
 }
@@ -22,8 +22,8 @@
 .button {
   display: inline-block;
   margin: 0;
-  margin-bottom: 32px;
-  padding: 15px 50px;
+  margin-bottom: 31px;
+  padding: 15px 40px;
   font-family: inherit;
   font-size: 18px;
   font-weight: bold;
@@ -46,5 +46,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 32px;
-  line-height: 1.6;
+
+  line-height: 1.7;
+  font-weight: lighter;
 }
