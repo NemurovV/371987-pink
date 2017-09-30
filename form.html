@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк (form)</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -51,19 +52,19 @@
           <legend class="visually hidden">Заполните ФИО</legend>
           <p class="form__item">
             <label class="form__lable-name" for="surname">Фамилия:</label>
-            <input  class="form__input-field" type="text" name="surname-field" id="surname" value="Укажите фамилию *">
+            <input  class="form__input-field" type="text" name="surname-field" id="surname" placeholder="Укажите фамилию *">
           </p>
           <p class="form__item">
             <label class="form__lable-name" for="username">Имя:</label>
-            <input  class="form__input-field" type="text" name="name-field" id="username" value="Введите ваше имя *">
+            <input  class="form__input-field" type="text" name="name-field" id="username" placeholder="Введите ваше имя *">
           </p>
           <p class="form__item">
             <label class="form__lable-name" for="patronymic">Отчество:</label>
-            <input  class="form__input-field" type="text" name="patronymic-field" id="patronymic" value="Ну и отчество тоже">
+            <input  class="form__input-field" type="text" name="patronymic-field" id="patronymic" placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
 
-        <fieldset class="form__field-set field-set__background-grey">
+        <fieldset class="form__field-set form__field-set--background-grey">
           <legend class="form__heading">Ваши безбашенные достижения в путешествии</legend>
           <p class="form__item">
             <input  class="visually-hidden" type="checkbox" name="checkbox-one" id="checkbox-one" checked>
@@ -95,15 +96,15 @@
           <legend class="visually hidden">Ваши контактные данные</legend>
           <p class="form__item">
             <label class="form__lable-name" for="phone">Номер телефона</label>
-            <input  class="form__input-field" type="text" name="phone-field" id="phone" value="Номер, пожалуйста">
+            <input  class="form__input-field" type="text" name="phone-field" id="phone" placeholder="Номер, пожалуйста">
           </p>
           <p class="form__item">
             <label class="form__lable-name">Адрес почты</label>
-            <input  class="form__input-field" type="email" name="email-field" id="email" value="Введите почту *">
+            <input  class="form__input-field" type="email" name="email-field" id="email" placeholder="Введите почту *">
           </p>
         </fieldset>
 
-        <fieldset class="form__field-set field-set__background-grey">
+        <fieldset class="form__field-set form__field-set--background-grey">
           <legend class="form__heading">С каким приложением путешествовали</legend>
           <p class="form__item">
             <input  class="visually-hidden" type="radio" name="radio-field" id="ios" value="ios" checked>
@@ -123,7 +124,7 @@
           <legend class="form__heading">Опишите свои имоции</legend>
           <textarea class="form__input-field comment-field__text" name="comment" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="form__button button" type="button" name="button">Отправить форму</button>
+        <button class="form__button submit-btn" type="button" name="button">Отправить форму</button>
       </form>
       <p class="postscript">
         <span class="postscript__notice">*</span> — обязательные поля

@@ -10,12 +10,12 @@ $main-nav: #283645;
   display: inline-block;
 
   width: 30px;
-  height: 4px;
+  height: 25px;
 
   font-size: 0;
   color: $main-nav;
 
-  background: #ffffff;
+  background: $main-nav;
 
   border: 0;
 
@@ -34,11 +34,7 @@ $main-nav: #283645;
   height: 4px;
 
   background-color: #ffffff;
-  outline: inherit;
-}
-
-.main-nav__toggle::before {
-  top: -10px;
+  box-shadow: 0 10px  #ffffff,
 }
 
 .main-nav__toggle::after {
@@ -53,10 +49,12 @@ $main-nav: #283645;
   text-align: center;
 
   & a {
+    display: block;
+    padding: 21px;
+
     font-family: inherit;
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: inherit;
     color: #ffffff;
 
     text-decoration: none;
@@ -65,8 +63,6 @@ $main-nav: #283645;
 }
 
 .site-list__item {
-  padding: 21px;
-
   border-bottom: 1px solid darken($main-nav, 100%);
   border-top: 1px solid lighten($main-nav, 10%);
 }

@@ -1,16 +1,22 @@
 .advertising {
-  vertical-align: top;
+  width: 100%;
   text-align: center;
   color: #ffffff;
 
   background: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 center;
+  background-position: center -70px;
   background-repeat: no-repeat;
-
-  & .advertising-image {
-    padding-top: 108px;
-  }
 }
+
+.advertising-image {
+  display: inline-block;
+  margin-left: -60px;
+  padding-top: 108px;
+
+  vertical-align: bottom;
+
+}
+
 
 .advertising__title {
   display: inline-block;
