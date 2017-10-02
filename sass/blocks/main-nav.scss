@@ -7,8 +7,7 @@ $main-nav: #283645;
 
 .main-nav__toggle {
   position: relative;
-  display: inline-block;
-
+  display: block;
   width: 30px;
   height: 25px;
 
@@ -17,7 +16,7 @@ $main-nav: #283645;
 
   background: $main-nav;
 
-  border: 0;
+  border: none;
 
   cursor: pointer;
 }
