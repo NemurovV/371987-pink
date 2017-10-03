@@ -167,40 +167,42 @@
         </div>
       </section>
 
-      <section class="upload-photos">
+      <section class="upload-photos upload-photos--bg-grey">
         <h2 class="visually-hidden">Выкладывайте фотографии</h2>
-        <p class="upload-photos__text">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        <p class="upload-photos__text ">
+          Затмите их всех!<br> Выкладывайте все, что накопилось в <br>телефоне!
         </p>
 
-        <img src="img\photo-road-mobile@1x.jpg" alt="Фото Зимний пейзаж"  width="280" height="374">
+        <div class="upload-photos__wrapper">
+          <img class="upload-photos__image" src="img\photo-road-mobile@1x.jpg" alt="Фото Зимний пейзаж"  width="280" height="374">
 
-        <form class="upload-photos__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="upload-photos__filters">
-            <p class="upload-photos__filter--resize">
-              <input  class="upload-photos__resize visually-hidden" type="radio" name="radio-field" id="resize" value="resize" checked="">
-              <label class="visually-hidden" for="resize">Обрезать</label>
-            </p>
-            <p class="upload-photos__filter--fill">
-              <input  class="upload-photos__fill visually-hidden" type="radio" name="radio-field" id="fill" value="fill">
-              <label class="visually-hidden" for="fill">Заливка</label>
-            </p>
-            <p class="upload-photos__filter--contrast">
-              <input  class="upload-photos__contrast visually-hidden" type="radio" name="radio-field" id="contrast" value="contrast">
-              <label class="visually-hidden" for="contrast">Контраст</label>
-            </p>
-          </div>
+          <form class="photos-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="filters">
+              <p class="filters__item filters__item--resize">
+                <input  class="input-text input-text--resize visually-hidden" type="radio" name="radio-field" id="resize" value="resize" checked="">
+                <label class="visually-hidden" for="resize">Обрезать</label>
+              </p>
+              <p class="filters__item filters__item--fill">
+                <input  class="input-text input-text--fill visually-hidden" type="radio" name="radio-field" id="fill" value="fill">
+                <label class="visually-hidden" for="fill">Заливка</label>
+              </p>
+              <p class="filters__item filters__item--contrast">
+                <input  class="input-text input-text--contrast visually-hidden" type="radio" name="radio-field" id="contrast" value="contrast">
+                <label class="visually-hidden" for="contrast">Контраст</label>
+              </p>
+            </div>
 
-          <p class="upload-photos__range">
-            <input type="range" name="range-field" id="range__line">
-            <label class="visually-hidden" for="range__line">Диапазон</label>
-          </p>
+            <p class="filters__item filters__item--range">
+              <input class="input-range" type="range" name="range-field" id="range-line">
+              <label class="visually-hidden" for="range-line">Диапазон</label>
+            </p>
 
-          <div class="upload-photos__button">
-            <button class="button--pink button">Запостить</button>
-            <button class="button-disable button">Отмена</button>
-          </div>
-        </form>
+            <div class="filters__button">
+              <button class="button button--pink">Запостить</button>
+              <button class="button button--disable">Отмена</button>
+            </div>
+          </form>
+        </div>
       </section>
 
       <footer class="page-footer">
