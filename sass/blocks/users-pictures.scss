@@ -59,7 +59,7 @@
   letter-spacing: 0.3px;
   text-transform: uppercase;
 
-  &:before {
+  &::before {
     content: "";
 
     position: absolute;
