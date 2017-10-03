@@ -10,9 +10,9 @@ $main-nav: #283645;
   display: block;
   width: 30px;
   height: 25px;
+  margin-right: 16px;
 
   font-size: 0;
-  color: $main-nav;
 
   background: $main-nav;
 
@@ -49,7 +49,7 @@ $main-nav: #283645;
 
   & a {
     display: block;
-    padding: 21px;
+    padding: 21px 0 21px;
 
     font-family: inherit;
     font-size: 18px;
