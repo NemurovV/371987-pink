@@ -179,23 +179,32 @@
           <form class="photos-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="filters">
               <p class="filters__item filters__item--resize">
-                <input  class="input-text input-text--resize visually-hidden" type="radio" name="radio-field" id="resize" value="resize" checked="">
-                <label class="visually-hidden" for="resize">Обрезать</label>
+                <input  class="visually-hidden" type="radio" name="radio-field" id="resize" value="resize" checked="">
+                <label class="filters__label filters__label--resize" for="resize">
+                  <span class="visually-hidden">Обрезать</span>
+                </label>
               </p>
               <p class="filters__item filters__item--fill">
-                <input  class="input-text input-text--fill visually-hidden" type="radio" name="radio-field" id="fill" value="fill">
-                <label class="visually-hidden" for="fill">Заливка</label>
+                <input  class="visually-hidden" type="radio" name="radio-field" id="fill" value="fill">
+                <label class="filters__label filters__label--fill" for="fill">
+                  <span class="visually-hidden">Заливка</span>
+                </label>
               </p>
               <p class="filters__item filters__item--contrast">
-                <input  class="input-text input-text--contrast visually-hidden" type="radio" name="radio-field" id="contrast" value="contrast">
-                <label class="visually-hidden" for="contrast">Контраст</label>
+                <input  class="visually-hidden" type="radio" name="radio-field" id="contrast" value="contrast">
+                <label class="filters__label filters__label--contrast" for="contrast">
+                  <span class="visually-hidden">Контраст</span>
+                </label>
               </p>
             </div>
-
-            <p class="filters-range">
-              <input class="filters-range__input-range" type="range" name="range-field" id="range-line">
-              <label class="filters-range__label visually-hidden" for="range-line">Диапазон</label>
-            </p>
+            <div class="filters-range__wrapper">
+              <p class="filters-range">
+                <input class="visually-hidden" type="range" name="range-field" id="range-line">
+                <label class="filters-range__label" for="range-line">
+                  <span class="visually-hidden">Диапазон</span>
+                </label>
+              </p>
+            </div>
 
             <div class="filters-button">
               <button class="button filters-button__btn filters-button__btn--pink">Запостить</button>

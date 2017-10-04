@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  background-color: $bg-grey;
+  /*background-color: $bg-grey;*/
 }
 
 .field-set {
@@ -13,12 +13,11 @@
   border: none;
 }
 
-.field-set--bg-white {
+.field-set--bg-grey {
   display: block;
-
   padding-bottom: 18px;
 
-  background-color: #ffffff;
+  background-color: $bg-grey;
 }
 
 .field-set__item {
@@ -49,4 +48,6 @@
   width: 100%;
   margin-bottom: 25px;
   padding: 21px;
+
+  box-sizing: border-box;
 }
