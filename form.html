@@ -39,17 +39,17 @@
       </section>
     </header>
 
-    <main class="page-main page-main--contents">
+    <main class="page-main">
       <section class="promo">
         <h2 class="visually-hidden">Форма для участия в акции</h2>
-        <p class="promo__text promo__text--item">
+        <p class="promo__title promo__title--form">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
       </section>
 
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="field-set field-set--block">
-          <legend class="visually hidden">Заполните ФИО</legend>
+      <form class="form-block" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="field-set field-set--bg-white">
+          <legend class="visually-hidden">Заполните ФИО</legend>
           <p class="field-set__item">
             <label class="field-set__lable field-set__lable--name" for="surname">Фамилия:</label>
             <input  class="field-set__input field-set__input--text" type="text" name="surname-field" id="surname" placeholder="Укажите фамилию *">
@@ -64,35 +64,35 @@
           </p>
         </fieldset>
 
-        <fieldset class="field-set field-set--block field-set--bg-grey">
-          <legend class="field-set__heading">Ваши безбашенные достижения в путешествии</legend>
+        <fieldset class="field-set">
+          <legend class="field-set__heading field-set__heading--bg-red">Ваши безбашенные достижения в путешествии</legend>
           <p class="field-set__item">
             <input  class="visually-hidden" type="checkbox" name="checkbox-one" id="checkbox-one" checked>
-            <label class="field-set__lable field-set__lable--name" for="checkbox-one">Сделал селфи с акулой</label>
+            <label class="field-set__lable" for="checkbox-one">Сделал селфи с акулой</label>
           </p>
           <p class="field-set__item">
             <input  class="visually-hidden" type="checkbox" name="checkbox-two" id="checkbox-two" checked>
-            <label class="field-set__lable field-set__lable--name" for="checkbox-two">Обгорел на пляже</label>
+            <label class="field-set__lable" for="checkbox-two">Обгорел на пляже</label>
           </p>
           <p class="field-set__item">
             <input  class="visually-hidden" type="checkbox" name="checkboxt-three" id="checkbox-three">
-            <label class="field-set__lable field-set__lable--name" for="checkbox-three">Видел Чака Норриса</label>
+            <label class="field-set__lable" for="checkbox-three">Видел Чака Норриса</label>
           </p>
-          <p class="form__item">
+          <p class="field-set__item">
             <input  class="visually-hidden" type="checkbox" name="checkbox-four" id="checkbox-four">
-            <label class="field-set__lable field-set__lable--name" for="checkbox-four">Накупил сувениров</label>
+            <label class="field-set__lable" for="checkbox-four">Накупил сувениров</label>
           </p>
           <p class="field-set__item">
             <input  class="visually-hidden" type="checkbox" name="checkbox-five" id="checkbox-five" checked>
-            <label class="field-set__lable field-set__lable--name" for="checkbox-five">Удержал башню</label>
+            <label class="field-set__lable" for="checkbox-five">Удержал башню</label>
           </p>
           <p class="field-set__item">
             <input  class="visually-hidden" type="checkbox" name="checkboxt-six" id="checkbox-six">
-            <label class="field-set__lable field-set__lable--name" for="checkbox-six">Разгромил отель</label>
+            <label class="field-set__lable" for="checkbox-six">Разгромил отель</label>
           </p>
         </fieldset>
 
-        <fieldset class="field-set field-set--block">
+        <fieldset class="field-set field-set--bg-white">
           <legend class="visually hidden">Ваши контактные данные</legend>
           <p class="field-set__item">
             <label class="field-set__lable field-set__lable--name" for="phone">Номер телефона</label>
@@ -104,24 +104,24 @@
           </p>
         </fieldset>
 
-        <fieldset class="field-set field-set--block field-set--bg-grey">
-          <legend class="form__heading">С каким приложением путешествовали</legend>
+        <fieldset class="field-set">
+          <legend class="form__heading field-set__heading--bg-red">С каким приложением путешествовали</legend>
           <p class="field-set__item">
             <input  class="visually-hidden" type="radio" name="radio-field" id="ios" value="ios" checked>
-            <label class="field-set__lable field-set__lable--name" for="ios">Pink для iOS</label>
+            <label class="field-set__lable" for="ios">Pink для iOS</label>
           </p>
           <p class="field-set__item">
             <input  class="visually-hidden" type="radio" name="radio-field" id="android" value="android">
-            <label class="field-set__lable field-set__lable--name" for="android">Pink на Android</label>
+            <label class="field-set__lable" for="android">Pink на Android</label>
           </p>
           <p class="field-set__item">
             <input  class="visually-hidden" type="radio" name="radio-field" id="windows" value="windows">
-            <label class="field-set__lable field-set__lable--name" for="windows">Windows Phone</label>
+            <label class="field-set__lable" for="windows">Windows Phone</label>
           </p>
         </fieldset>
 
-        <fieldset class="field-set field-set--block">
-          <legend class="form__heading">Опишите свои имоции</legend>
+        <fieldset class="field-set">
+          <legend class="form__heading field-set__heading--bg-red">Опишите свои имоции</legend>
           <textarea class="field-set__input field-set__input--text" name="comment" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="button button__submit--btn" type="button" name="button">Отправить форму</button>
@@ -139,20 +139,28 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">
+                <span class="visually-hidden">Мы в Твиттере</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <span class="visually-hidden">HTML Academy</span>
+            </a>
         </div>
       </footer>
 
