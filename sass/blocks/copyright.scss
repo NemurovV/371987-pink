@@ -1,0 +1,16 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 130px;
+}
+
+.copyright__link {
+  width: 27px;
+  height: 38px;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
