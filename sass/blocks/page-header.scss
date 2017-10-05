@@ -1,0 +1,16 @@
+$main-nav: #283645;
+
+.page-header {
+  background: $main-nav;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 22px 22px 21px;
+
+  align-items: center;
+
+  border-bottom: 1px solid darken($main-nav, 100%);
+}
