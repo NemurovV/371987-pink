@@ -28,21 +28,20 @@
     background-position: center -28px;
   }
 
-    &::after {
-      content: "";
+  &::after {
+    content: "";
 
-      position: absolute;
-      left: 0;
-      bottom: 72px;
-      z-index: 3;
+    position: absolute;
+    left: 0;
+    bottom: 72px;
+    z-index: 3;
 
-      width: 320px;
-      height: 201px;
+    width: 320px;
+    height: 201px;
 
 
-      background-image: url("../img/icon-map-marker.svg");
-      background-repeat: no-repeat;
-      background-position: center bottom;
-
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 }
