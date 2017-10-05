@@ -2,6 +2,12 @@ $bg-grey: #f2f2f2;
 
 $color-red: #d22856;
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -22,6 +28,8 @@ body {
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: lighter;
+
+  box-sizing: border-box;
 }
 
 img {
