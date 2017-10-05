@@ -23,7 +23,7 @@
 
 .comment__item {
   margin: 0;
-  margin-top: 22px;
+  margin-top: 20px;
   padding: 0;
 
   font-size: 14px;
@@ -32,7 +32,8 @@
 
 .comment__author {
   display: inline-block;
-  margin-bottom: 4px;
+  margin-left: 1px;
+  margin-bottom: 6px;
   font-size: 12px;
   font-weight: lighter;
   text-transform: uppercase;
@@ -40,7 +41,7 @@
 
 .comment__text {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   padding: 0;
 
   line-height: 1.75;
@@ -50,9 +51,9 @@
 .comment__value {
   position: relative;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   padding: 0;
-  padding-left: 31px;
+  padding-left: 32px;
 
   font-size: 12px;
   color: $color-red;

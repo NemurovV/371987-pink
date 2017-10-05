@@ -3,9 +3,46 @@
 }
 
 .map__wrapper {
+  position: relative;
+
   width: 320px;
   height: 201px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center -90px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 320px;
+    height: 201px;
+
+
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: center -28px;
+  }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: 72px;
+      z-index: 3;
+
+      width: 320px;
+      height: 201px;
+
+
+      background-image: url("../img/icon-map-marker.svg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+
+  }
 }
