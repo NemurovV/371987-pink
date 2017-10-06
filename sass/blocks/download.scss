@@ -1,0 +1,37 @@
+.download {
+
+  padding-top: 27px;
+
+  color: #ffffff;
+  text-align: center;
+
+  background: #1d2631;
+}
+
+.download__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  width: 208px;
+  margin: 0 auto 19px;
+  padding: 0;
+  list-style: none;
+}
+
+.download__button {
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+.download__text {
+  display: inline-block;
+  width: 230px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
+
+  line-height: 1.7;
+  font-weight: lighter;
+}

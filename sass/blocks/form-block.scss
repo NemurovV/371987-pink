@@ -1,0 +1,105 @@
+.form-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field-set {
+  display: block;
+  width: 320px;
+  padding-bottom: 8px;
+
+  border: none;
+}
+
+.field-set__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 40px;
+
+  background-color: $bg-grey;
+}
+
+.field-set--block {
+  padding-top: 40px;
+}
+
+.field-set__item {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+}
+
+.field-set__lable {
+  margin-bottom: 62px;
+
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.field-set__lable--apps {
+  margin-bottom: 54px;
+}
+
+.field-set__lable--apps-last {
+  margin-bottom: 44px;
+}
+
+.field-set__lable--last-field {
+  margin-bottom: 44px;
+}
+
+.field-set__lable--name {
+  margin-bottom: 12px;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  color: $color-red;
+  text-transform: uppercase;
+}
+
+.field-set__heading {
+  width: 240px;
+  margin-bottom: 45px;
+
+  color: $color-red;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.field-set__heading--apps {
+  margin-bottom: 41px;
+}
+
+.field-set__heading--textarea {
+  margin-bottom: 15px;
+}
+
+.field-set__input {
+  font-size: 18px;
+}
+
+.field-set__input--text {
+  display: block;
+  width: 280px;
+  margin-bottom: 25px;
+  padding: 19px;
+
+  box-sizing: border-box;
+}
+
+.postscript {
+  margin: 0;
+
+  text-transform: uppercase;
+}
+
+.postscript__notice {
+  color: red;
+}
