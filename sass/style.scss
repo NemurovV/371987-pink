@@ -1,21 +1,7 @@
 @import "normalize.scss";
-@import "utility.scss";
-
-body {
-  width: 320px;
-  margin: 0;
-  padding: 0;
-
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: lighter;
-}
-
-img {
-  display: block;
-}
+@import "variables.scss";
 @import "helper.scss";
-@import "utils.scss";
+@import "scaffolding.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
@@ -23,6 +9,7 @@ img {
 @import "blocks/download.scss";
 @import "blocks/button.scss";
 @import "blocks/advantages.scss";
+@import "blocks/arguments.scss";
 @import "blocks/reviews.scss";
 @import "blocks/toggles.scss";
 @import "blocks/tariff.scss";

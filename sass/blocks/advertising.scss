@@ -1,19 +1,20 @@
-.advertising {
+.advertising__wrapper {
+  display: inline-block;
   width: 100%;
-  text-align: center;
-  color: #ffffff;
+  padding-top: 395px;
 
-  background: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center -70px;
-  background-repeat: no-repeat;
+  background:
+  url("../img/iphone-hand-mobile@1x.png"),
+  url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 29%, center -70px;
+  background-repeat: no-repeat, no-repeat;
 }
 
-.advertising-image {
-  display: inline-block;
-  margin-left: -60px;
-  padding-top: 108px;
+.advertising {
+  width: 100%;
 
-  vertical-align: bottom;
+  text-align: center;
+  color: #ffffff;
 }
 
 .advertising__title {
@@ -32,4 +33,18 @@
 
 .advertising__title--form {
   margin-bottom: 55px;
+
+
+}
+
+@media (min-width: $tablet-width) {
+  .advertising__wrapper {
+    position: relative;
+
+    display: block;
+    padding-top: 618px;
+
+    background-position: 80% 90%, center -70px;
+    background-size: 400px, cover;
+  }
 }

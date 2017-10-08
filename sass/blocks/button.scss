@@ -23,3 +23,10 @@
 
   background-color: #2aab6d;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    display: block;
+    margin-bottom: 46px;
+}
+}

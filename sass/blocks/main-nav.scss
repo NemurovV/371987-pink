@@ -1,18 +1,25 @@
-$main-nav: #283645;
-
 .main-nav {
   display: block;
-  background: $main-nav;
+  width: 320px;
+  margin: 0 auto;
+  background: $darkblue;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
 
 .main-nav__toggle {
   position: relative;
   display: block;
   width: 30px;
   height: 25px;
-  margin-right: 16px;
 
-  background: $main-nav;
+  background: $darkblue;
 
   border: none;
 
@@ -30,8 +37,8 @@ $main-nav: #283645;
   width: 30px;
   height: 4px;
 
-  background-color: #ffffff;
-  box-shadow: 0 10px  #ffffff;
+  background-color: $white;
+  box-shadow: 0 10px  $white;
 }
 
 .main-nav__toggle::after {
@@ -52,7 +59,7 @@ $main-nav: #283645;
     font-family: inherit;
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: $white;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -60,6 +67,6 @@ $main-nav: #283645;
 }
 
 .site-list__item {
-  border-bottom: 1px solid darken($main-nav, 100%);
-  border-top: 1px solid lighten($main-nav, 10%);
+  border-bottom: 1px solid darken($darkblue, 100%);
+  border-top: 1px solid lighten($darkblue, 10%);
 }

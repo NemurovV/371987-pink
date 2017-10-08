@@ -11,8 +11,7 @@
     <header class="page-header">
       <div class="page-header__wrapper container">
         <a class="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" viewBox="0 0 74.426 22.859"><g fill="#FFF"><path d="M0 1.45C0 .74.58.16 1.256.16h7.18c5.087 0 8.436 2.705 8.436 7.148v.064c0 4.86-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.858 0 22.278 0 21.57V1.45zm8.114 10.978c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.918h5.57zM21.73 1.288C21.73.58 22.307 0 22.982 0c.71 0 1.288.58 1.288 1.288V21.57c0 .71-.578 1.29-1.287 1.29-.676 0-1.255-.58-1.255-1.29V1.29zM30.87 1.32c0-.676.58-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256C47.452.58 47.998 0 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.19-1.158 1.19h-.13c-.547 0-.933-.32-1.32-.77L33.35 4.153v17.45c0 .675-.548 1.255-1.256 1.255-.677 0-1.224-.58-1.224-1.257V1.32zM56.3 1.288C56.3.58 56.88 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.33L71.69.452c.29-.257.58-.45.998-.45.676 0 1.224.612 1.224 1.256 0 .354-.16.644-.42.9l-7.983 7.92 8.563 10.562c.225.29.354.547.354.934 0 .676-.58 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.86v4.895c0 .708-.58 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/></g>
-          </svg>
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип пинк">
         </a>
         <button  class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -36,46 +35,49 @@
         </ul>
       </nav>
 
-      <section class="advertising">
-        <h2 class="visually-hidden">Сделай жизнь ярче</h2>
-        <img  class="advertising-image" src="img/iphone-hand-mobile@1x.png" alt="">
-      </section>
+      <div class="advertising__wrapper">
+        <section class="advertising">
+          <h2 class="visually-hidden">Сделай жизнь ярче</h2>
+        </section>
+
+        <section class="download">
+          <h2 class="visually-hidden">Скачать приложение</h2>
+          <p class="download__heading">
+            Взгляните на жизнь иначе!
+          </p>
+          <a class="button" href="#">Скачать приложение</a>
+
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__button download__button-aplle" href="#">
+                <span class="visually-hidden">Apple</span>
+                <img src="img/logo-apple.svg" alt="Apple">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__button download__button-android" href="#">
+                <span class="visually-hidden">Android</span>
+                <img src="img/logo-android.svg" alt="Android">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__button download__button-windows" href="#">
+                <span class="visually-hidden">Windows</span>
+                <img src="img/logo-microsoft.svg" alt="Windows Phone">
+              </a>
+            </li>
+          </ul>
+
+          <p class="download__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </section>
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Розовый делает мир интересней!</h1>
 
-      <section class="download">
-        <h2 class="visually-hidden">Скачать приложение</h2>
-        <a class="button" href="#">Скачать приложение</a>
-
-        <ul class="download__list">
-          <li class="download__item">
-            <a class="download__button download__button-aplle" href="#">
-              <span class="visually-hidden">Apple</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="46.21" height="56.753" viewBox="0 0 46.21 56.753"><path fill="#FFF" d="M38.593 30.15c.08 8.59 7.535 11.447 7.617 11.483-.062.202-1.19 4.073-3.927 8.072-2.365 3.457-4.82 6.9-8.688 6.973-3.8.07-5.02-2.253-9.365-2.253-4.344 0-5.702 2.182-9.298 2.32-3.733.142-6.576-3.74-8.96-7.184-4.876-7.045-8.6-19.91-3.598-28.592 2.484-4.313 6.925-7.043 11.743-7.114 3.666-.07 7.126 2.466 9.366 2.466 2.24 0 6.444-3.05 10.865-2.6 1.85.076 7.044.746 10.38 5.628-.27.17-6.197 3.623-6.135 10.802m-7.14-21.088c1.982-2.4 3.316-5.74 2.952-9.062-2.857.115-6.312 1.904-8.36 4.302-1.837 2.123-3.445 5.52-3.01 8.778 3.183.246 6.435-1.62 8.418-4.018"/></svg>
-            </a>
-          </li>
-          <li class="download__item">
-            <a class="download__button download__button-android" href="#">
-              <span class="visually-hidden">Android</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="42.084" height="47.041" viewBox="0 0 42.084 47.041"><path fill="#A4C639" d="M34.144 14.01h-26.2c-.008.11-.017.22-.017.332v18.755c0 1.926 1.457 3.49 3.316 3.627v7.43c0 1.594 1.29 2.885 2.885 2.885 1.593 0 2.885-1.292 2.885-2.886v-7.42h8.058v7.42c0 1.594 1.292 2.885 2.886 2.885 1.595 0 2.886-1.292 2.886-2.886V36.72c1.858-.137 3.315-1.7 3.315-3.627v-18.75c0-.114-.004-.224-.013-.334zM2.886 15.68c1.593 0 2.886 1.29 2.886 2.884v12.378c0 1.595-1.292 2.886-2.886 2.886S0 32.538 0 30.942V18.564c0-1.594 1.292-2.885 2.886-2.885zM39.198 15.68c1.595 0 2.886 1.29 2.886 2.884v12.378c0 1.595-1.29 2.886-2.886 2.886-1.594 0-2.885-1.29-2.885-2.886V18.564c0-1.594 1.29-2.885 2.885-2.885zM8.03 11.967h26.026c-.04-2.783-1.234-5.322-3.187-7.275L33.314.457c.082-.146.03-.33-.112-.415-.146-.084-.33-.034-.415.11L30.416 4.26c-2.052-1.853-6.25-3.4-9.374-3.4-3.016 0-7.322 1.547-9.374 3.4L9.296.152c-.083-.145-.27-.194-.415-.11-.144.083-.194.27-.11.414l2.445 4.235c-1.95 1.955-3.147 4.494-3.185 7.277zm17.293-5.163c-.002-.805.664-1.46 1.488-1.462.827-.002 1.495.648 1.5 1.454v.008c0 .805-.665 1.46-1.49 1.462-.824.002-1.494-.65-1.497-1.454v-.008zm-11.143 0c0-.805.665-1.46 1.49-1.462.823-.002 1.493.648 1.496 1.454v.008c.002.805-.664 1.46-1.488 1.462-.825.002-1.495-.65-1.498-1.454v-.008z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="download__item">
-            <a class="download__button download__button-windows" href="#">
-              <span class="visually-hidden">Windows</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="43.922" height="41.992" viewBox="0 0 43.922 41.992"><path fill="#F05423" d="M20.874 19.953H0V0h20.874v19.953z"/><path fill="#84C441" d="M43.922 19.953H23.05V0H43.92v19.953z"/><path fill="#2DABE2" d="M20.873 41.992H0V22.04h20.873v19.952z"/><path fill="#F9BC15" d="M43.922 41.992H23.05V22.04H43.92v19.952z"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-        <p class="download__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </section>
 
       <section class="advantages">
         <div class="advantages__header">
@@ -112,11 +114,25 @@
         </div>
       </section>
 
+      <section class="arguments">
+        <div class="arguments__wrapper">
+          <h2 class="arguments__heading">Эффект <br> на 24 часа!</h2>
+          <p class="arguments__text">
+            Британские ученые провели исследования и доказали, что положительный эффект <br>от использования приложения длится целые сутки!
+          </p>
+          <a class="arguments__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__wrapper sliders">
           <div class="reviews__list">
             <blockquote class="reviews__item">
+              <p class="reviews__author-comment">
+                25 лет, водитель трамвая
+              </p>
+
               <p class="reviews__author-name">
                 Николай Петров
               </p>
