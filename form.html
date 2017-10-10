@@ -42,7 +42,7 @@
       </section>
     </header>
 
-    <main class="page-main container">
+    <main class="page-main">
       <section class="promo">
         <h2 class="visually-hidden">Форма для участия в акции</h2>
         <p class="promo__title promo__title--form">
@@ -51,7 +51,7 @@
       </section>
 
       <form class="form-block" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="field-set">
+        <fieldset class="field-set container">
           <legend class="visually-hidden">Заполните ФИО</legend>
           <p class="field-set__item">
             <label class="field-set__lable field-set__lable--name" for="surname">Фамилия:</label>
@@ -68,7 +68,7 @@
         </fieldset>
 
         <div class="field-set__wrapper">
-          <fieldset class="field-set">
+          <fieldset class="field-set container">
             <legend class="field-set__heading">Ваши безбашенные достижения в путешествии</legend>
             <p class="field-set__item">
               <input  class="visually-hidden" type="checkbox" name="checkbox-one" id="checkbox-one" checked>
@@ -97,7 +97,7 @@
           </fieldset>
         </div>
 
-        <fieldset class="field-set field-set--block">
+        <fieldset class="field-set field-set--block container">
           <legend class="visually-hidden">Ваши контактные данные</legend>
           <p class="field-set__item">
             <label class="field-set__lable field-set__lable--name" for="phone">Номер телефона</label>
@@ -110,7 +110,7 @@
         </fieldset>
 
         <div class="field-set__wrapper">
-          <fieldset class="field-set">
+          <fieldset class="field-set container">
             <legend class="field-set__heading field-set__heading--apps">С каким приложением путешествовали</legend>
             <p class="field-set__item">
               <input  class="visually-hidden" type="radio" name="radio-field" id="ios" value="ios" checked>
@@ -127,14 +127,17 @@
           </fieldset>
         </div>
 
-        <fieldset class="field-set">
+        <fieldset class="field-set container">
           <legend class="field-set__heading field-set__heading--textarea">Опишите свои имоции</legend>
           <textarea class="field-set__input field-set__input--text" name="comment" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="button button__submit--btn" type="button" name="button">Отправить форму</button>
-        <p class="postscript">
-          <span class="postscript__notice">*</span> — обязательные поля
-        </p>
+
+        <div class="field-set__btn container">
+          <button class="button button__submit--btn" type="button" name="button">Отправить форму</button>
+          <p class="postscript">
+            <sup class="postscript__notice">*</sup> — обязательные поля
+          </p>
+        </div>
       </form>
     </main>
 
