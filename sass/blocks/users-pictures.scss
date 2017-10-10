@@ -9,7 +9,6 @@
   margin-bottom: 10px;
 
   background-color: $bg-grey;
-
 }
 
 .comment--bg-grey {
@@ -85,7 +84,7 @@
 @media (min-width: $tablet-width) {
   .users-pictures__wrapper {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 

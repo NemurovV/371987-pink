@@ -3,7 +3,7 @@
   width: auto;
 
   background-color: $darkblue;
-  background-image:   url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 260px;
   background-repeat: no-repeat;
   background-size: 700px auto;
@@ -50,7 +50,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background-position: center 0;
-    background-size: cover
+    background-size: cover;
   }
 
   .page-header__wrapper {
