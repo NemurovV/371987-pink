@@ -49,3 +49,31 @@
     color: $color-red;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .arguments {
+    background-color: $bg-grey;
+  }
+
+  .arguments__wrapper {
+    width: 540px;
+    margin-right: 100px;
+  }
+
+  .arguments__text {
+    font-size: 18px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .arguments__heading {
+    width: 300px;
+
+    & br {
+      display: none;
+    }
+  }
+
+}

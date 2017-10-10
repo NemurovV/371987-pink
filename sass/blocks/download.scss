@@ -1,11 +1,18 @@
 .download {
-  width: 100%;
+  width: auto;
   padding-top: 28px;
 
   color: $white;
   text-align: center;
 
   background-color: $verydark-blue;
+
+  border: 1px dotted white;
+}
+
+.download__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .download__heading {
@@ -25,8 +32,6 @@
 
 .download__button {
   display: block;
-
-  vertical-align: top;
 }
 
 .download__text {
@@ -42,14 +47,9 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    position: absolute;
-    top: 68px;
-    left: 20px;
-    display: block;
-    width: 300px;
+    order: -1;
 
-    text-align: center;
-    background-color: inherit;
+    background-color: transparent;
   }
 
   .download__heading {
@@ -67,11 +67,17 @@
     margin-bottom: 34px;
   }
 
-
   .download__text {
     display: inline-block;
     width: 100%;
     font-size: 18px;
     line-height: 1.4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download__wrapper {
+    width: 550px;
+    margin: 0 auto;
   }
 }

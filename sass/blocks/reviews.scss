@@ -106,3 +106,12 @@
     letter-spacing: 0.27px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews__text {
+    display: flex;
+
+    width: 700px;
+    margin: 40px auto;
+  }
+}

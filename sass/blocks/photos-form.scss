@@ -3,28 +3,6 @@
   flex-direction: column;
   align-items: center;
 
-  width: 100%;
+  width: auto;
   padding-top: 35px;
-}
-
-.upload-photos__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 100%;
-  padding-top: 20px;
-  background-color: $bg-grey;
-}
-
-.upload-photos__text {
-  width: 260px;
-  margin: 0;
-  margin-bottom: 45px;
-  padding: 0;
-
-  line-height: 2.1;
-  letter-spacing: 0.3px;
-
-  text-align: center;
 }
