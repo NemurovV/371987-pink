@@ -1,6 +1,7 @@
 @import "normalize.scss";
+@import "variables.scss";
 @import "helper.scss";
-@import "utils.scss";
+@import "scaffolding.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
@@ -8,6 +9,7 @@
 @import "blocks/download.scss";
 @import "blocks/button.scss";
 @import "blocks/advantages.scss";
+@import "blocks/arguments.scss";
 @import "blocks/reviews.scss";
 @import "blocks/toggles.scss";
 @import "blocks/tariff.scss";

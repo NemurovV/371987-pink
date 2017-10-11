@@ -1,25 +1,29 @@
 .upload-photos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 100%;
+  display: block;
+  width: 320px;
+  margin: 0 auto;
   padding-top: 35px;
+
+  border: 3px dotted rgb(255, 0, 0);
+}
+
+.photos-form {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+
+  border: 3px dotted rgb(255, 0, 0);
 }
 
 .upload-photos__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 100%;
+  display: block;
   padding-top: 20px;
   background-color: $bg-grey;
+
+  box-shadow: 0 0 0 1px blue;
 }
 
 .upload-photos__text {
-  width: 260px;
-  margin: 0;
   margin-bottom: 41px;
   padding: 0;
 
@@ -27,4 +31,48 @@
   letter-spacing: 0.3px;
 
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .upload-photos {
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 35px;
+
+    border: 3px dotted rgb(255, 0, 0);
+  }
+
+  .upload-photos__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 100%;
+  }
+
+  .upload-photos__image {
+    width: 280px;
+    margin: 0;
+    padding: 0;
+
+    box-shadow: 0 0 0 1px red;
+  }
+
+  .upload-photos__item {
+    padding: 20px;
+  }
+
+  .upload-photos__text {
+    margin-bottom: 45px;
+
+    & br:last-child {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload-photos {
+    width: 960px;
+  }
 }

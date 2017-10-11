@@ -1,19 +1,16 @@
 .advertising {
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
+
   text-align: center;
   color: #ffffff;
 
-  background: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center -70px;
-  background-repeat: no-repeat;
+  border: 1px dotted white;
 }
 
-.advertising-image {
-  display: inline-block;
-  margin-left: -60px;
-  padding-top: 108px;
-
-  vertical-align: bottom;
+.advertising__image {
+  display: block;
+  margin-top: 50px;
 }
 
 .advertising__title {
@@ -32,4 +29,34 @@
 
 .advertising__title--form {
   margin-bottom: 55px;
+}
+
+@media (min-width: $tablet-width) {
+  .advertising {
+    width: 660px;
+  }
+
+  .advertising__title {
+    width: 360px;
+    margin-top: 85px;
+    margin-bottom: 140px;
+
+    font-size: 50px;
+  }
+
+  .advertising__image {
+    margin-left: 20%;
+    margin-top: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advertising {
+    width: 960px;
+  }
+
+  .advertising__title {
+    margin-top: 80px;
+    margin-bottom: 110px;
+  }
 }

@@ -1,29 +1,33 @@
-.users-pictures {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.users-pictures__wrapper {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+}
 
-  width: 100%;
-  padding-top: 11px;
+.users-pictures {
+  display: block;
+  margin-bottom: 10px;
+
+  background-color: $bg-grey;
+}
+
+.comment--bg-grey {
+  width: 280px;
+  margin: 0 auto;
+
+  background-color: $bg-grey;
 }
 
 .comment {
-  width: 263px;
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
+  display: block;
+  padding: 10px 0;
   padding-left: 17px;
 
   text-align: left;
 }
 
-.comment--bg-grey {
-  background-color: $bg-grey;
-}
-
 .comment__item {
   margin: 0;
-  margin-top: 20px;
   padding: 0;
 
   font-size: 14px;
@@ -40,6 +44,7 @@
 }
 
 .comment__text {
+  width: 235px;
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
@@ -73,5 +78,30 @@
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .users-pictures__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 660px;
+  }
+
+  .comment--bg-grey {
+    width: 100%;
+  }
+
+  .comment__text--item {
+    width: 520px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .users-pictures__wrapper {
+    width: 960px;
   }
 }
