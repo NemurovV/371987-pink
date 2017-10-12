@@ -14,26 +14,11 @@
   .arguments__wrapper {
     position: relative;
 
-    display:block;
+    display: block;
     width: auto;
     margin: 0 auto;
     margin-top: 8px;
     margin-left: 290px;
-
-    &:before {
-      content: "";
-
-      position: absolute;
-      top: -40px;
-      left: -365px;
-
-      width: 348px;
-      height: 276px;
-
-      background-image: url("../img/Round diagram.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
   }
 
   .arguments__heading {
