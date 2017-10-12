@@ -29,3 +29,16 @@
     padding: 15px 45px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button__download-btn {
+    margin-bottom: 66px;
+    margin-left: -26px;
+    padding: 12px 31px;
+
+    font-size: 21px;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+  }
+}

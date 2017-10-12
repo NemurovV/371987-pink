@@ -68,7 +68,6 @@
     width: 340px;
   }
 
-
   .download__list {
     margin-bottom: 37px;
   }
@@ -77,15 +76,42 @@
     display: inline-block;
     width: 100%;
 
-
     font-size: 18px;
     line-height: 1.4;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .download {
+    padding-top: 111px;
+  }
+
   .download__wrapper {
-    width: 550px;
-    margin: 0 auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    &.container {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .download__heading {
+    width: 245px;
+    margin-left: 37px;
+    margin-bottom: 52px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download__list {
+    margin-left: 58px;
+    margin-bottom: 56px;
+  }
+
+  .download__text {
+    margin-left: -28px;
   }
 }

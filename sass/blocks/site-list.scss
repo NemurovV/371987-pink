@@ -26,8 +26,18 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 630px;
-    margin: -80px auto 0;
+    width: 620px;
+    margin-top: 22px;
+
+    & a {
+      padding: 21px 0;
+
+      font-size: 18px;
+      font-weight: lighter;
+
+      text-decoration: none;
+      text-transform: none;
+    }
   }
 
   .site-list__item {
