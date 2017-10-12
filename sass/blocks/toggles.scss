@@ -5,7 +5,7 @@
 
   width: 60px;
   height: 16px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-bottom: 40px;
   padding-right: 4px;
@@ -37,4 +37,15 @@
 
 .toggles__tariff {
   padding-bottom: 44px;
+}
+
+@media (min-width: $tablet-width) {
+  .toggles {
+    margin-top: 5px;
+    padding-bottom: 25px;
+  }
+
+  .toggles__tariff {
+    display: none;
+  }
 }

@@ -6,8 +6,6 @@
   text-align: center;
 
   background-color: $verydark-blue;
-
-  border: 1px dotted white;
 }
 
 .download__wrapper {
@@ -49,27 +47,37 @@
   .download {
     order: -1;
 
+    padding-top: 92px;
+
     background-color: transparent;
   }
 
   .download__heading {
     display: block;
     width: 200px;
-    margin: 0 auto 33px;
+    margin: 0 auto 29px;
     padding: 0;
 
     font-family: inherit;
     font-size: 40px;
+    line-height: 48px;
     font-weight: lighter;
   }
 
+  .download__wrapper {
+    width: 340px;
+  }
+
+
   .download__list {
-    margin-bottom: 34px;
+    margin-bottom: 37px;
   }
 
   .download__text {
     display: inline-block;
     width: 100%;
+
+
     font-size: 18px;
     line-height: 1.4;
   }
