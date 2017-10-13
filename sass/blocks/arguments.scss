@@ -6,18 +6,19 @@
   .arguments {
     display: block;
     width: 100%;
-    padding-top: 55px;
+    margin: 0 auto;
+    padding-top: 5px;
     padding-bottom: 30px;
   }
 
   .arguments__wrapper {
-    display: flex;
-    flex-direction: column;
+    position: relative;
 
-    width: 305px;
-    margin-top: 46px;
-    margin-right: 25px;
-    margin-left: auto;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-left: 290px;
   }
 
   .arguments__heading {
@@ -32,6 +33,7 @@
   }
 
   .arguments__text {
+    width: 300px;
     margin: 0;
     margin-bottom: 12px;
     padding: 0;
@@ -52,27 +54,38 @@
 
 @media (min-width: $desktop-width) {
   .arguments {
+    padding-bottom: 118px;
+
     background-color: $bg-grey;
   }
 
   .arguments__wrapper {
     width: 540px;
-    margin-right: 100px;
-  }
-
-  .arguments__text {
-    font-size: 18px;
-
-    & br {
-      display: none;
-    }
+    margin-left: 257px;
+    padding-top: 102px;
   }
 
   .arguments__heading {
     width: 300px;
+    margin-bottom: 23px;
 
     & br {
       display: none;
     }
+  }
+
+  .arguments__text {
+    width: 530px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 29px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .arguments__link {
+    font-size: 18px;
   }
 }

@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   margin-bottom: 31px;
-  padding: 15px 30px;
+  padding: 15px 34px;
   font-family: inherit;
   font-size: 18px;
   font-weight: bold;
@@ -24,7 +24,21 @@
 }
 
 @media (min-width: $tablet-width) {
-  .button {
-    margin-bottom: 46px;
+  .button__download-btn {
+    margin-bottom: 44px;
+    padding: 15px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button__download-btn {
+    margin-bottom: 66px;
+    margin-left: -26px;
+    padding: 12px 31px;
+
+    font-size: 21px;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
   }
 }

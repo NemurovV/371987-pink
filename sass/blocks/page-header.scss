@@ -4,7 +4,7 @@
 
   background-color: $darkblue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 260px;
+  background-position: center 258px;
   background-repeat: no-repeat;
   background-size: 700px auto;
 }
@@ -15,14 +15,12 @@
 
   width: 320px;
   margin: 0 auto;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 21px;
 
   background-color: $darkblue;
 
   border-bottom: 1px solid darken($darkblue, 100%);
-
-  border: 1px dotted white;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,14 +51,23 @@
     background-size: cover;
   }
 
+  .page-header__container {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
   .page-header__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    width: 960px;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 169px;
 
     background-color: transparent;
+    border: none;
   }
 
   .page-header__top {

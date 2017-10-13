@@ -1,4 +1,4 @@
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
   width: 1px;
@@ -6,6 +6,9 @@
   border: 0;
   padding: 0;
 
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -30,26 +33,29 @@ body {
 
 .container {
   width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
 
-  border: 1px dotted green;
+  box-shadow: 0 0 0 1px red;
 }
 
 @media (min-width: 660px) {
   .container {
     width: 620px;
+    margin: 0 auto;
     padding: 0 20px;
 
-    border: 1px dotted red;
+    box-shadow: 0 0 0 1px green;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 960px;
+    margin: 0 auto;
     padding: 0 120px;
 
-    border: 1px dotted blue;
+    box-shadow: 0 0 0 1px blue;
   }
 }
 
