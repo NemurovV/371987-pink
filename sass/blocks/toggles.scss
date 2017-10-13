@@ -49,3 +49,9 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .toggles {
+    display: none;
+  }
+}

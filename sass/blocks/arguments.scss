@@ -54,29 +54,40 @@
 
 @media (min-width: $desktop-width) {
   .arguments {
+    padding-bottom: 118px;
+
     background-color: $bg-grey;
+
   }
 
   .arguments__wrapper {
     width: 540px;
-    margin-right: 100px;
-    padding-top: 100px;
-  }
-
-  .arguments__text {
-    font-size: 18px;
-
-    & br {
-      display: none;
-    }
+    margin-left: 257px;
+    padding-top: 102px;
   }
 
   .arguments__heading {
     width: 300px;
-
+    margin-bottom: 23px;
 
     & br {
       display: none;
     }
   }
+
+  .arguments__text {
+    width: 530px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 29px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .arguments__link {
+    font-size: 18px;
+  }
+
 }
