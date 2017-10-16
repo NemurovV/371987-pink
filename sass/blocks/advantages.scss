@@ -5,7 +5,7 @@
     content: "";
 
     position: absolute;
-    top: 208px;
+    top: 220px;
     left: 0;
 
     width: 100%;
@@ -81,9 +81,13 @@
       width: 100%;
       height: 300px;
 
-      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-repeat: no-repeat;
-      background-position: center 23px;
+      background-position: center 12px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      }
     }
   }
 }
@@ -120,7 +124,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     &::before {
-      top: 240px;
+      top: 273px;
 
       height: 130px;
 
@@ -130,8 +134,8 @@
 
   .advantages__header {
     width: 620px;
-    padding-top: 51px;
-    padding-bottom: 108px;
+    padding-top: 81px;
+    padding-bottom: 109px;
   }
 
   .advantages__title {
@@ -146,7 +150,7 @@
     margin-bottom: 0;
 
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 48px;
 
     &:last-child {
       width: 340px;
@@ -156,7 +160,6 @@
   }
 
   .advantages__wrapper {
-    padding-bottom: 6px;
 
     background-position: 20px 116px;
     background-size: 200px;
@@ -166,6 +169,7 @@
       justify-content: flex-end;
 
       margin-top: -20px;
+      padding-right: 0;
     }
   }
 
@@ -181,16 +185,18 @@
     text-align: left;
 
     &:last-child {
-      padding-bottom: 70px;
+      padding-bottom: 0;
 
       &::before {
-        top: -320px;
-        left: -320px;
+        top: -374px;
+        left: -330px;
 
         height: 500px;
 
         background-position: center 40px;
-        background-size: 260px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
       }
     }
   }
