@@ -9,8 +9,16 @@
 .copyright__link {
   width: 27px;
   height: 38px;
+  margin-top: 1px;
+  margin-right: 1px;
 
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-top: 5px;
+  }
 }

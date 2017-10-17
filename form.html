@@ -10,31 +10,37 @@
 
     <header class="page-header">
       <div class="page-header__top">
-        <div class="page-header__wrapper container">
-          <a class="logo">
-            <img src="img/logo-pink-white-mobile.svg" alt="Логотип пинк">
-          </a>
+        <div class="page-header__container">
+          <div class="page-header__wrapper container">
+            <a class="page-header__logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип пинк">
+              </picture>
+            </a>
 
-          <button  class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+            <button  class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a>Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru">Html academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">Html academy</a>
-            </li>
-          </ul>
-        </nav>
       </div>
 
       <section class="advertising">
