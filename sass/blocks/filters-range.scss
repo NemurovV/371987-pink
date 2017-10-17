@@ -45,22 +45,22 @@
     padding-top: 15px;
     padding-bottom: 58px;
 
+    &:after {
+      content: "";
+
+      position: absolute;
+      top: 75px;
+      left: -61px;
+
+      width: 278px;
+      height: 1px;
+
+      background-color: #dddfe0;
+    }
+
     &:nth-child(2) {
       padding-bottom: 55px;
     }
-  }
-
-  .filters-range:after {
-    content: "";
-
-    position: absolute;
-    top: 75px;
-    left: -61px;
-
-    width: 278px;
-    height: 1px;
-
-    background-color: #dddfe0;
   }
 
   .filters-range__wrapper {
