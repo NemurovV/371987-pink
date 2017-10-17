@@ -90,13 +90,15 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    padding-top: 111px;
+    padding-top: 0;
   }
 
   .download__wrapper {
     width: auto;
     margin: 0;
     padding: 0;
+
+    text-align: left;
 
     &.container {
       margin: 0;
@@ -111,6 +113,8 @@
 
     font-size: 50px;
     line-height: 60px;
+
+    text-align: center;
   }
 
   .download__list {
@@ -119,6 +123,9 @@
   }
 
   .download__text {
-    margin-left: -28px;
+    width: 300px;
+    margin-left: 10px;
+
+    text-align: center;
   }
 }

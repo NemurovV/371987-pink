@@ -58,9 +58,10 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background-position: center 0;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-tablet@1x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
