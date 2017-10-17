@@ -207,5 +207,34 @@
 @media (min-width: $desktop-width) {
   .users-pictures__wrapper {
     width: 960px;
+
+    &.container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .users-pictures {
+    margin-bottom: 60px;
+
+    &:nth-child(2) {
+      margin-bottom: 60px;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: 60px;
+    }
+  }
+
+
+  .comment--panorama {
+    width: 940px;
+    padding-top: 27px;
+    padding-left: 28px;
+    padding-right: 29px;
+  }
+
+  .comment__text--panorama {
+    width: 888px;
   }
 }
