@@ -19,7 +19,7 @@
   background-color: $bg-grey;
 }
 
-.field-set--block {
+.field-set--contacts {
   padding-top: 40px;
 }
 
@@ -189,26 +189,150 @@ input[class="visually-hidden"] {
 }
 
 @media (min-width: $tablet-width) {
-  .field-set {
-    width: 660px;
+  .form-block {
+    display: flex;
+    flex-direction: column;
   }
 
-  .field-set__item {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+  .field-set {
+    width: 620px;
+
+    border: 2px solid $border-grey;
+  }
+
+  .field-set--username {
+    order: -3;
+    width: 660px;
+
+    border: none;
+  }
+
+
+  .field-set--contacts {
+    order: -1;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 37px;
+  }
+
+  .field-set--textarea {
+    margin-top: 57px;
+    margin-bottom: 48px;
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+
+  .field-set__wrapper {
+    margin-top: 20px;
+
+    background-color: $white;
+  }
+
+  .field-set__wrapper--apps {
+    order: -2;
+
+    margin-top: -3px;
+    padding-top: 0px;
+    margin-bottom: 58px;
+  }
+
+  .field-set__heading {
+    width: auto;
+    margin-bottom: 53px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+
+  .field-set__heading--apps {
+    margin-bottom: 53px;
+  }
+
+  .field-set__heading--contacts {
+    margin-bottom: 0;
+  }
+
+  .field-set__heading--textarea {
+    margin-bottom: 37px;
+    padding-top: 0;
+  }
+
+  .field-set__lable--item {
+    &::before {
+      left: -57px;
+    }
+
+    &::after {
+      left: -51px;
+    }
+  }
+
+  .field-set__lable--apps {
+
+    &::after {
+      left: -47px;
+    }
   }
 
   .field-set__input--text {
     display: block;
     width: 100%;
+    margin-bottom: 53px;
+  }
+
+  .field-set__input--contacts {
+    margin-bottom: 18px;
+  }
+
+  .field-set__input--text-area {
+    min-height: 192px;
+    margin-bottom: 44px;
+  }
+
+  .field-set__item {
+    &:last-child .field-set__lable--apps {
+      margin-bottom: 57px;
+    }
+  }
+
+  .field-set__item--username {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .field-set__item--contacts {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &:last-child {
+      margin-bottom: -11px;
+    }
+  }
+
+  .field-set__lable--name {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .field-set__lable--contacts {
+    margin-left: 17px;
+    margin-bottom: 36px;
+  }
+
+  .field-set__lable--item {
+    margin-left: 97px;
+  }
+
+  .field-set__lable--last-field {
+    margin-bottom: 50px;
   }
 
   .field-set__btn {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
     width: 660px;
+    margin-bottom: 3px;
   }
 }
 

@@ -25,13 +25,27 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
+    width: 130px;
+    margin-top: 8px;
+  }
+
+  .copyright__text {
+    letter-spacing: 0.4px;
+  }
+
+  .copyright__link {
+    background-position: center 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
     width: 153px;
     margin-top: 5px;
   }
 
   .copyright__text {
     font-size: 18px;
-    letter-spacing: 0.4px;
   }
 
   .copyright__link {

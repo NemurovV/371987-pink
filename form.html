@@ -57,17 +57,17 @@
       </section>
 
       <form class="form-block" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="field-set container">
+        <fieldset class="field-set field-set--username container">
           <legend class="visually-hidden">Заполните ФИО</legend>
-          <p class="field-set__item">
+          <p class="field-set__item field-set__item--username">
             <label class="field-set__lable field-set__lable--name" for="surname">Фамилия:</label>
             <input  class="field-set__input field-set__input--text" type="text" name="surname-field" id="surname" placeholder="Укажите фамилию *">
           </p>
-          <p class="field-set__item">
+          <p class="field-set__item field-set__item--username">
             <label class="field-set__lable field-set__lable--name" for="username">Имя:</label>
             <input  class="field-set__input field-set__input--text" type="text" name="name-field" id="username" placeholder="Введите ваше имя *">
           </p>
-          <p class="field-set__item">
+          <p class="field-set__item field-set__item--username">
             <label class="field-set__lable field-set__lable--name" for="patronymic">Отчество:</label>
             <input  class="field-set__input field-set__input--text" type="text" name="patronymic-field" id="patronymic" placeholder="Ну и отчество тоже">
           </p>
@@ -103,19 +103,20 @@
           </fieldset>
         </div>
 
-        <fieldset class="field-set field-set--block container">
-          <legend class="visually-hidden">Ваши контактные данные</legend>
-          <p class="field-set__item">
-            <label class="field-set__lable field-set__lable--name" for="phone">Номер телефона</label>
-            <input  class="field-set__input field-set__input--text" type="text" name="phone-field" id="phone" placeholder="Номер, пожалуйста">
+        <fieldset class="field-set field-set--contacts container">
+          <legend class="field-set__heading field-set__heading--contacts">Контактная информация</legend>
+          <p class="field-set__item field-set__item--contacts">
+            <label class="field-set__lable field-set__lable--name
+            field-set__lable--contacts" for="phone">Номер телефона</label>
+            <input  class="field-set__input field-set__input--text field-set__input--contacts" type="text" name="phone-field" id="phone" placeholder="Номер, пожалуйста">
           </p>
-          <p class="field-set__item">
-            <label class="field-set__lable field-set__lable--name">Адрес почты</label>
-            <input  class="field-set__input field-set__input--text" type="email" name="email-field" id="email" placeholder="Введите почту *">
+          <p class="field-set__item field-set__item--contacts">
+            <label class="field-set__lable field-set__lable--name field-set__lable--contacts">Адрес почты</label>
+            <input  class="field-set__input field-set__input--text field-set__input--contacts" type="email" name="email-field" id="email" placeholder="Введите почту *">
           </p>
         </fieldset>
 
-        <div class="field-set__wrapper">
+        <div class="field-set__wrapper field-set__wrapper--apps">
           <fieldset class="field-set container">
             <legend class="field-set__heading field-set__heading--apps">С каким приложением путешествовали?</legend>
             <p class="field-set__item">
@@ -133,7 +134,7 @@
           </fieldset>
         </div>
 
-        <fieldset class="field-set container">
+        <fieldset class="field-set field-set--textarea container">
           <legend class="field-set__heading field-set__heading--textarea">Опишите свои эмоции</legend>
           <textarea class="field-set__input field-set__input--text field-set__input--text-area" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
