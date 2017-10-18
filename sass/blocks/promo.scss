@@ -2,10 +2,9 @@
   display: block;
   width: 320px;
   margin: 0 auto;
-  padding-top: 46px;
+  padding-top: 45px;
 
   text-align: center;
-  border: 3px dotted rgb(255, 0, 0);
 }
 
 .promo__title {
@@ -29,13 +28,15 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    width: 660px;
+    width: auto;
+    margin-bottom: 48px;
+    padding-top: 0;
   }
 
   .promo__title {
-    width: 440px;
-    margin-top: 100px;
-    margin-bottom: 80px;
+    width: 490px;
+    margin-top: 93px;
+    margin-bottom: 68px;
 
     font-size: 18px;
 
@@ -46,7 +47,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo {
-    width: 960px;
+  .promo__title {
+    width: 580px;
+    margin-bottom: 90px;
+
+    letter-spacing: 0.4px;
   }
 }

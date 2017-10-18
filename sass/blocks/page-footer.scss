@@ -3,9 +3,8 @@
   flex-direction: column;
   align-items: center;
 
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 39px;
+  width: auto;
+  padding-top: 43px;
   padding-bottom: 40px;
 }
 
@@ -20,7 +19,6 @@
     justify-content: space-between;
 
     width: 660px;
-    margin: 0 auto;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -29,9 +27,17 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 960px;
+    padding-top: 63px;
+    padding-bottom: 50px;
 
     &.container {
-      padding: 0 10px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
+  }
+
+  .page-footer--index {
+    padding-top: 32px;
+    padding-bottom: 50px;
   }
 }

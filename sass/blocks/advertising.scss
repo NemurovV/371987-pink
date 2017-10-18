@@ -15,36 +15,36 @@
   display: inline-block;
   width: 260px;
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 84px;
+  margin-top: 29px;
+  margin-bottom: 83px;
   padding: 0;
 
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 29px;
   font-weight: lighter;
   vertical-align: top;
 }
 
 .advertising__title--form {
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 @media (min-width: $tablet-width) {
   .advertising {
-    width: 660px;
+    width: auto;
   }
 
   .advertising__title {
-    width: 360px;
-    margin-top: 85px;
-    margin-bottom: 140px;
+    width: 490px;
+    margin-top: 69px;
+    margin-bottom: 79px;
 
     font-size: 50px;
+    line-height: 60px;
   }
 
   .advertising__image {
-    margin-left: 20%;
-    margin-top: 331px;
+    margin-top: 73px;
   }
 }
 
@@ -54,11 +54,12 @@
   }
 
   .advertising__title {
-    margin-top: 80px;
-    margin-bottom: 110px;
+    margin-top: 68px;
+    margin-bottom: 100px;
   }
 
   .advertising__image {
-    margin-top: 460px;
+    margin-top: 110px;
+    margin-left: 70px;
   }
 }

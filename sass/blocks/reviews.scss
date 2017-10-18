@@ -69,7 +69,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     width: 100%;
-    padding-top: 97px;
+    padding-top: 87px;
 
     &::after {
       bottom: -80px;
@@ -102,7 +102,7 @@
 
   .reviews__text {
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
     margin-bottom: 37px;
 
     font-size: 18px;
@@ -143,8 +143,8 @@
   }
 
   .reviews__text {
-    width: 700px;
-    margin-top: 85px;
+    width: 690px;
+    margin-top: 18px;
   }
 
   .reviews__author-name {
