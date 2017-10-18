@@ -21,3 +21,14 @@
     margin-bottom: 34px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .photos-form {
+    padding-top: 16px;
+  }
+
+  .photos-form__wrapper {
+    width: 417px;
+    margin-bottom: 34px;
+  }
+}

@@ -67,20 +67,44 @@
   }
 
   .filters__label--resize {
-    position: absolute;
     top: 12px;
+
     background-size: 55%;
   }
 
   .filters__label--fill {
-    position: absolute;
     top: 12px;
+
     background-size: 55%;
   }
 
   .filters__label--contrast {
     top: 6px;
     left: 2px;
+
     background-size: 38%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filters__label--resize {
+    top: 12px;
+    left: 7px;
+
+    background-size: 100%;
+  }
+
+  .filters__label--fill {
+    top: 13px;
+    left: 10px;
+
+    background-size: 100%;
+  }
+
+  .filters__label--contrast {
+    top: 6px;
+    left: 8px;
+
+    background-size: 75%;
   }
 }

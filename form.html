@@ -117,7 +117,7 @@
 
         <div class="field-set__wrapper">
           <fieldset class="field-set container">
-            <legend class="field-set__heading field-set__heading--apps">С каким приложением путешествовали</legend>
+            <legend class="field-set__heading field-set__heading--apps">С каким приложением путешествовали?</legend>
             <p class="field-set__item">
               <input  class="visually-hidden" type="radio" name="radio-field" id="ios" value="ios" checked>
               <label class="field-set__lable field-set__lable--apps" for="ios">Pink для iOS</label>
@@ -134,8 +134,8 @@
         </div>
 
         <fieldset class="field-set container">
-          <legend class="field-set__heading field-set__heading--textarea">Опишите свои имоции</legend>
-          <textarea class="field-set__input field-set__input--text" name="comment" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <legend class="field-set__heading field-set__heading--textarea">Опишите свои эмоции</legend>
+          <textarea class="field-set__input field-set__input--text field-set__input--text-area" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <div class="field-set__btn container">
@@ -149,7 +149,10 @@
 
     <footer class="page-footer container">
       <a class="page-footer__logo">
-        <img src="img/logo-pink-blue-mobile.svg" alt="Логитип пинк">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логитип пинк">
+        </picture>
       </a>
 
       <div class="page-footer__social social">

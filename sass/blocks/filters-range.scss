@@ -67,3 +67,16 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .filters-range {
+    width: 288px;
+    margin-left: 24px;
+
+    &::after {
+      left: -94px;
+
+      width: 410px;
+    }
+  }
+}

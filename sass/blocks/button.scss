@@ -8,19 +8,21 @@
   color: inherit;
   text-decoration: none;
 
-  border: 3px solid #ffffff;
+  border: 3px solid $white;
   border-radius: 40px;
 }
 
 .button__submit--btn {
-  padding: 21px 43px;
+  margin-bottom: 44px;
+  padding: 21px 47px;
 
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
 
-  border-radius: 6px;
+  border: none;
+  border-radius: 4px;
 
-  background-color: #2aab6d;
+  background-color: $bg-gren;
 }
 
 @media (min-width: $tablet-width) {

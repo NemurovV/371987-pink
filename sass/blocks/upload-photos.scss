@@ -64,5 +64,23 @@
 @media (min-width: $desktop-width) {
   .upload-photos {
     width: 960px;
+
+    &.container {
+      padding: 0 10px;
+    }
+  }
+
+  .upload-photos__text {
+    margin-top: 11px;
+    margin-bottom: 66px;
+  }
+
+  .upload-photos__wrapper {
+    padding-left: 80px;
+    padding-right: 54px;
+  }
+
+  .upload-photos__item {
+    padding-top: 37px;
   }
 }

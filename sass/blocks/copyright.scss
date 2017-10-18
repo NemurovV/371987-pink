@@ -6,6 +6,12 @@
   width: 130px;
 }
 
+.copyright__text {
+  margin-top: -3px;
+
+  letter-spacing: 0.3px;
+}
+
 .copyright__link {
   width: 27px;
   height: 38px;
@@ -19,6 +25,17 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
+    width: 153px;
     margin-top: 5px;
   }
+
+  .copyright__text {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+  }
+
+  .copyright__link {
+    background-position: center 4px;
+  }
+
 }

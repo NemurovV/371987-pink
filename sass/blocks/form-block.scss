@@ -1,7 +1,6 @@
 .form-block {
   display: block;
-
-  box-shadow: 0 0 0 1px green;
+  padding-top: 4px;
 }
 
 .field-set {
@@ -11,13 +10,11 @@
   padding-bottom: 8px;
 
   border: none;
-
-  box-shadow: 0 0 0 1px blue;
 }
 
 .field-set__wrapper {
   margin-top: 10px;
-  padding-top: 40px;
+  padding-top: 37px;
 
   background-color: $bg-grey;
 }
@@ -35,10 +32,12 @@
 }
 
 .field-set__lable {
+  margin-left: 70px;
   margin-bottom: 62px;
 
   font-family: inherit;
   font-size: 18px;
+letter-spacing: 0.35px;
 }
 
 .field-set__lable--apps {
@@ -54,10 +53,12 @@
 }
 
 .field-set__lable--name {
+  margin-left: 22px;
   margin-bottom: 12px;
 
   font-family: inherit;
   font-size: 14px;
+  letter-spacing: 0.5px;
 
   color: $color-red;
   text-transform: uppercase;
@@ -65,19 +66,22 @@
 
 .field-set__heading {
   width: 240px;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
 
+  line-height: 18px;
+  letter-spacing: 0.3px;
   color: $color-red;
   text-align: center;
   text-transform: uppercase;
 }
 
 .field-set__heading--apps {
-  margin-bottom: 41px;
+  margin-bottom: 45px;
 }
 
 .field-set__heading--textarea {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+  padding-top: 39px;
 }
 
 .field-set__input {
@@ -90,7 +94,17 @@
   margin-bottom: 25px;
   padding: 19px;
 
+  letter-spacing: 0.5px;
+
   box-sizing: border-box;
+}
+
+.field-set__input--text-area {
+  min-width: auto;
+  min-height: 200px;
+  margin-bottom: 21px;
+  line-height: 28px;
+
 }
 
 .field-set__btn {
@@ -100,12 +114,14 @@
 
 .postscript {
   margin: 0;
+
+  letter-spacing: 0.3px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .postscript__notice {
-  color: red;
+  color: $color-red;
 }
 
 @media (min-width: $tablet-width) {

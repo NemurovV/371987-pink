@@ -5,9 +5,9 @@
 
   background-color: $darkblue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 178px;
+  background-position: center 256px;
   background-repeat: no-repeat;
-  background-size: 1400px auto;
+  background-size: 220%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");

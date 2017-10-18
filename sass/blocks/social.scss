@@ -36,7 +36,7 @@
 
 .social__link--twitter {
   position: absolute;
-  top: 13px;
+  top: 12px;
   left: 12px;
 
   display: block;
@@ -50,7 +50,7 @@
 
 .social__link--facebook {
   position: absolute;
-  top: 11px;
+  top: 10px;
   left: 11px;
 
   display: block;
@@ -64,7 +64,7 @@
 
 .social__link--youtube {
   position: absolute;
-  top: 12px;
+  top: 11px;
   left: 14px;
 
   display: block;
@@ -78,6 +78,7 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    margin-left: -16px;
+    margin-top: 3px;
+    margin-left: 4px;
   }
 }
