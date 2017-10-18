@@ -35,11 +35,11 @@ input[class="visually-hidden"] {
   padding: 0;
 
   & input[type="checkbox"]:checked + label::after {
-  display: block;
+    display: block;
   }
 
   & input[type="radio"]:checked + label::after {
-  display: block;
+    display: block;
   }
 
   &:last-child .field-set__lable--apps {
@@ -232,7 +232,7 @@ input[class="visually-hidden"] {
     order: -2;
 
     margin-top: -3px;
-    padding-top: 0px;
+    padding-top: 0;
     margin-bottom: 58px;
   }
 
@@ -257,6 +257,8 @@ input[class="visually-hidden"] {
   }
 
   .field-set__lable--item {
+    margin-left: 97px;
+
     &::before {
       left: -57px;
     }
@@ -267,7 +269,6 @@ input[class="visually-hidden"] {
   }
 
   .field-set__lable--apps {
-
     &::after {
       left: -47px;
     }
@@ -316,10 +317,6 @@ input[class="visually-hidden"] {
   .field-set__lable--contacts {
     margin-left: 17px;
     margin-bottom: 36px;
-  }
-
-  .field-set__lable--item {
-    margin-left: 97px;
   }
 
   .field-set__lable--last-field {

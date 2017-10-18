@@ -2,7 +2,6 @@
   display: block;
   width: auto;
 
-
   background-color: $darkblue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 256px;
@@ -30,8 +29,6 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    background-size: 2400px auto;
-
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center 257px;
     background-size: 181%;
