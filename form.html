@@ -61,22 +61,22 @@
           <legend class="visually-hidden">Заполните ФИО</legend>
           <p class="field-set__item field-set__item--username">
             <label class="field-set__lable field-set__lable--name" for="surname">Фамилия:</label>
-            <input  class="field-set__input field-set__input--text" type="text" name="surname-field" id="surname" placeholder="Укажите фамилию *">
+            <input  class="field-set__input field-set__input--text field-set__input--username" type="text" name="surname-field" id="surname" placeholder="Укажите фамилию *">
           </p>
           <p class="field-set__item field-set__item--username">
             <label class="field-set__lable field-set__lable--name" for="username">Имя:</label>
-            <input  class="field-set__input field-set__input--text" type="text" name="name-field" id="username" placeholder="Введите ваше имя *">
+            <input  class="field-set__input field-set__input--text field-set__input--username" type="text" name="name-field" id="username" placeholder="Введите ваше имя *">
           </p>
           <p class="field-set__item field-set__item--username">
             <label class="field-set__lable field-set__lable--name" for="patronymic">Отчество:</label>
-            <input  class="field-set__input field-set__input--text" type="text" name="patronymic-field" id="patronymic" placeholder="Ну и отчество тоже">
+            <input  class="field-set__input field-set__input--text field-set__input--username" type="text" name="patronymic-field" id="patronymic" placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
 
         <div class="field-set__wrapper">
-          <fieldset class="field-set container">
-            <legend class="field-set__heading">Ваши безбашенные достижения в путешествии</legend>
-            <p class="field-set__item">
+          <fieldset class="field-set field-set--track-record container">
+            <legend class=" field-set__heading">Ваши безбашенные достижения в путешествии</legend>
+            <p class="field-set__item field-set__item--track-record">
               <input  class="visually-hidden" type="checkbox" name="checkbox-one" id="checkbox-one" checked>
               <label class="field-set__lable field-set__lable--item" for="checkbox-one">Сделал селфи с акулой</label>
             </p>
@@ -107,17 +107,17 @@
           <legend class="field-set__heading field-set__heading--contacts">Контактная информация</legend>
           <p class="field-set__item field-set__item--contacts">
             <label class="field-set__lable field-set__lable--name
-            field-set__lable--contacts" for="phone">Номер телефона</label>
+            field-set__lable--contacts field-set__lable--contacts-phote" for="phone">Номер телефона</label>
             <input  class="field-set__input field-set__input--text field-set__input--contacts" type="text" name="phone-field" id="phone" placeholder="Номер, пожалуйста">
           </p>
           <p class="field-set__item field-set__item--contacts">
-            <label class="field-set__lable field-set__lable--name field-set__lable--contacts">Адрес почты</label>
+            <label class="field-set__lable field-set__lable--name field-set__lable--contacts field-set__lable--contacts-email">Адрес почты</label>
             <input  class="field-set__input field-set__input--text field-set__input--contacts" type="email" name="email-field" id="email" placeholder="Введите почту *">
           </p>
         </fieldset>
 
         <div class="field-set__wrapper field-set__wrapper--apps">
-          <fieldset class="field-set container">
+          <fieldset class="field-set field-set--apps container">
             <legend class="field-set__heading field-set__heading--apps">С каким приложением путешествовали?</legend>
             <p class="field-set__item">
               <input  class="visually-hidden" type="radio" name="radio-field" id="ios" value="ios" checked>
@@ -134,15 +134,15 @@
           </fieldset>
         </div>
 
-        <fieldset class="field-set field-set--textarea container">
-          <legend class="field-set__heading field-set__heading--textarea">Опишите свои эмоции</legend>
+        <fieldset class="field-set field-set--text-area container">
+          <legend class="field-set__heading field-set__heading--text-area">Опишите свои эмоции</legend>
           <textarea class="field-set__input field-set__input--text field-set__input--text-area" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <div class="field-set__btn container">
           <button class="button button__submit--btn" type="button" name="button">Отправить форму</button>
           <p class="postscript">
-            <sup class="postscript__notice">*</sup> — обязательные поля
+            <sup class="postscript__notice">*</sup> — обязательные <span class="postscript__text">для заполнения</span> поля
           </p>
         </div>
       </form>

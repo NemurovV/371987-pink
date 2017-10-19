@@ -25,7 +25,7 @@
 .promo__title--form {
   margin-bottom: 38px;
 }
-
+  /*=================================================*/
 @media (min-width: $tablet-width) {
   .promo {
     width: auto;
@@ -45,12 +45,17 @@
     }
   }
 }
-
+  /*=================================================*/
 @media (min-width: $desktop-width) {
   .promo__title {
     width: 580px;
-    margin-bottom: 90px;
+    margin-bottom: 88px;
 
     letter-spacing: 0.4px;
+  }
+
+  .promo__title--form {
+    width: 760px;
+    margin-bottom: 71px;
   }
 }
