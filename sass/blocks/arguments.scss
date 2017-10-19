@@ -1,7 +1,7 @@
 .arguments {
   display: none;
 }
-
+/*==================================================*/
 @media (min-width: $tablet-width) {
   .arguments {
     display: block;
@@ -89,9 +89,11 @@
     color: $color-red;
   }
 }
-
+/*==================================================*/
 @media (min-width: $desktop-width) {
   .arguments {
+    margin: 0;
+    padding-top: 10px;
     padding-bottom: 118px;
 
     background-color: $bg-grey;

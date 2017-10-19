@@ -378,7 +378,6 @@ input[class="visually-hidden"] {
 @media (min-width: $desktop-width) {
   .form-block {
     flex-direction: row;
-    justify-content: flex-start;
     flex-wrap: wrap;
 
     width: 960px;
@@ -441,9 +440,9 @@ input[class="visually-hidden"] {
   }
 
   .field-set--contacts {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    display: flex; /*==========================*/
+    flex-direction: row;
+    justify-content: space-between;
 
     margin-top: 4px;
     margin-left: 10px;
@@ -453,11 +452,13 @@ input[class="visually-hidden"] {
   }
 
   .field-set__item--contacts {
-    width: 373px;
+    width: 373px; /*==========================*/
+    margin: 0;
+    padding: 0;
   }
 
   .field-set--track-record {
-    display: flex;
+    display: flex; /*==========================*/
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -465,6 +466,14 @@ input[class="visually-hidden"] {
       padding-left: 30px;
       padding-right: 30px;
     }
+  }
+
+  .field-set__item--track-record {
+    display: flex; /*==========================*/
+    width: 205px;
+    height: 50px;
+    box-shadow: 0 0 0 1px red;
+    margin-bottom: 10px;
   }
 
   .field-set--text-area {
