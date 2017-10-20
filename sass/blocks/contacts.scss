@@ -12,7 +12,7 @@
   padding: 0;
 
   font-size: 24px;
-  line-height: 29px;
+  line-height: 28px;
 }
 
 .contacts-wrapper {
@@ -22,10 +22,11 @@
 
 .contacts__item {
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 
   &:nth-child(2) {
-    margin-bottom: 28px;
+    margin-left: 3px;
+    margin-bottom: 27px;
   }
 }
 
@@ -43,11 +44,11 @@
   margin: 0;
 
   font-size: 24px;
-  line-height: 27px;
+  line-height: 29px;
 
   color: $color-red;
 }
-
+/*==================================================*/
 @media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: 28px;
@@ -66,8 +67,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    box-shadow: 0 0 0 1px red;
   }
 
   .contacts__item {
@@ -82,10 +81,10 @@
   }
 
   .contacts__title {
-    margin-bottom: 7px;
+    margin-bottom: 6px;
   }
 }
-
+/*==================================================*/
 @media (min-width: $desktop-width) {
   .contacts {
     margin-bottom: 0;
