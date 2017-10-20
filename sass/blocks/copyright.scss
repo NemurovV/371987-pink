@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
+/*===================================================*/
 @media (min-width: $tablet-width) {
   .copyright {
     width: 130px;
@@ -34,10 +34,10 @@
   }
 
   .copyright__link {
-    background-position: center 3px;
+    background-position: center 2px;
   }
 }
-
+/*===================================================*/
 @media (min-width: $desktop-width) {
   .copyright {
     width: 153px;

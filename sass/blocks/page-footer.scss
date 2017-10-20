@@ -11,7 +11,7 @@
 .page-footer--index {
   display: none;
 }
-
+/*===================================================*/
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
@@ -23,7 +23,7 @@
     padding-bottom: 0;
   }
 }
-
+/*===================================================*/
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 960px;

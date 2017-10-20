@@ -211,6 +211,10 @@
     }
   }
 
+  .advantages__title--last {
+    margin-bottom: 14px;
+  }
+
   .advantages__description {
     width: 100%;
     margin-bottom: 36px;
@@ -221,8 +225,12 @@
       display: block;
     }
   }
-}
 
+  .dvantages__description--last {
+    margin-bottom: 27px;
+  }
+}
+/*==================================================*/
 @media (min-width: $desktop-width) {
   .advantages {
     &::before {
