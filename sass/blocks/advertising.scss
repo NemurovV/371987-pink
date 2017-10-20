@@ -54,14 +54,14 @@
     margin-top: 74px;
   }
 }
-
+/*===================================================*/
 @media (min-width: $desktop-width) {
   .advertising {
     width: 960px;
   }
 
   .advertising__title {
-    margin-top: 68px;
+    margin-top: 62px;
     margin-bottom: 100px;
   }
 
@@ -70,7 +70,10 @@
   }
 
   .advertising__image {
-    margin-top: 110px;
-    margin-left: 70px;
+    width: auto;
+    height: 645px;
+
+    margin-top: 96px;
+    margin-left: 28px;
   }
 }

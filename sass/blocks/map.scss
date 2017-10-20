@@ -73,23 +73,23 @@
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   background-image: url("../img/bg-map-tablet@2x.jpg");
 }
-
+/*==================================================*/
 @media (min-width: $desktop-width) {
   .map {
     height: 524px;
-    margin-top: 0;
+    margin-top: -2px;
 
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-position: center -254px;
 
     &::before {
-      top: -5px;
+      top: -3px;
 
-      height: 285px;
+      height: 290px;
     }
 
     &::after {
-      bottom: 204px;
+      bottom: 203px;
     }
   }
 

@@ -129,13 +129,13 @@
 /*==================================================*/
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-top: 97px;
+    padding-top: 165px;
 
     &::before {
       content: "";
 
       position: absolute;
-      top: -1px;
+      top: 64px;
       left: 47%;
 
       width: 76px;
@@ -148,7 +148,7 @@
     }
 
     &::after {
-      bottom: -109px;
+      bottom: -106px;
 
       height: 110px;
 
@@ -159,7 +159,7 @@
   .reviews__wrapper {
     position: relative;
 
-    margin-bottom: 97px;
+    margin-bottom: 95px;
 
     &::before {
       content: "";
@@ -200,7 +200,7 @@
   }
 
   .reviews__author-name {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     font-size: 24px;
   }
 

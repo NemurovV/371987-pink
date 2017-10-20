@@ -106,8 +106,7 @@
 @media (min-width: $desktop-width) {
   .arguments {
     margin: 0;
-    padding-top: 10px;
-    padding-bottom: 118px;
+    padding-bottom: 64px;
 
     background-color: $bg-grey;
   }
@@ -120,45 +119,40 @@
   .arguments-column-left {
     display: block;
     width: 320px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 360px;
+    margin-top: 13px;
 
-    text-align: center;
-    box-shadow: 0 0 0 1px red;
-
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
     background-position: 10px 12px;
     background-size: 298px;
   }
 
   .arguments-column-left__text {
-    display: block;
+    position: relative;
 
-    width: 255px;
-    height: 255px;
-    margin: 0;
-    margin-top: 71px;
-    margin-left: 31px;
-    margin-bottom: 20px;
-    padding-top: 29px;
+    margin-top: 130px;
+    margin-left: 89px;
 
-    font-size: 120px;
-    font-weight: bold;
-    color: $color-red;
+    font-size: 122px;
 
-    border: 20px solid $color-red;
+    &::after {
+      content: "";
 
-    border-radius: 50%;
+      position: absolute;
+      top: -51px;
+      left: -56px;
 
-    box-shadow: inset 0 0 0 87px transparent;
+      width: 252px;
+      height: 252px;
+
+      border: 16px solid $color-red;
+    }
   }
 
   .arguments-column-right {
     display: block;
     width: 530px;
     margin-right: 4px;
-    padding-top: 27px;
+    padding-top: 28px;
   }
 
   .arguments-column-right__heading {
@@ -171,10 +165,10 @@
   }
 
   .arguments-column-right__text {
-    width: 530px;
-    margin-bottom: 35px;
+    width: 540px;
+    margin-bottom: 29px;
     font-size: 18px;
-    line-height: 29px;
+    line-height: 30px;
     letter-spacing: 0.4px;
 
     & br:last-child {
@@ -184,6 +178,8 @@
 
   .arguments-column-right__link {
     font-size: 18px;
+    line-height: 32px;
+
     letter-spacing: 0.4px;
   }
 }

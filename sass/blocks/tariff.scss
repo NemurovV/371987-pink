@@ -186,7 +186,7 @@
 /*==================================================*/
 @media (min-width: $desktop-width) {
   .tariff {
-    padding-top: 55px;
+    padding-top: 57px;
     padding-bottom: 47px;
 
     & .container {
@@ -199,13 +199,24 @@
   }
 
   .tariff__header {
-    padding-top: 18px;
-    padding-bottom: 21px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+  }
+
+  .tariff__header--label {
+    background-image: url("../img/bg-hit.svg");
+
+    &::before {
+      top: 17px;
+      left: 12px;
+    }
   }
 
   .tariff__name {
-    margin-bottom: 7px;
-    font-size: 20px;
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    font-size: 18px;
   }
 
   .tariff__price {

@@ -130,10 +130,10 @@
     line-height: 1.4;
   }
 }
-
+/*==================================================*/
 @media (min-width: $desktop-width) {
   .download {
-    padding-top: 0;
+    padding-top: 10px;
   }
 
   .download__wrapper {
@@ -162,7 +162,15 @@
 
   .download__list {
     margin-left: 58px;
-    margin-bottom: 56px;
+    margin-bottom: 55px;
+  }
+
+  .download__image--apple {
+    margin-left: -1px;
+  }
+
+  .download__image--android {
+    margin-left: 36px;
   }
 
   .download__text {
