@@ -101,8 +101,26 @@
   }
 
   .download__list {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
   }
+
+  .download__image--apple {
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+
+  .download__image--android {
+    width: 43px;
+    margin-left: 35px;
+  }
+
+  .download__image--microsoft {
+    width: 44px;
+    height: 42px;
+    margin-left: 36px;
+    margin-bottom: 3px;
+  }
+
 
   .download__text {
     display: inline-block;
