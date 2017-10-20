@@ -10,16 +10,26 @@
 
   background-color: $bg-grey;
   box-shadow: 0 0 0 1px green;
+}
 
-  &:nth-child(2) {
-    margin-bottom: 23px;
-    box-shadow: 0 0 0 1px blue;
-  }
+.users-pictures--two {
+  margin-bottom: 23px;
+  box-shadow: 0 0 0 1px blue;
+}
 
-  &:nth-child(5) {
-    margin-bottom: 24px;
-    box-shadow: 0 0 0 1px blue;
-  }
+.users-pictures--three {
+  margin-bottom: 21px;
+  box-shadow: 0 0 0 1px blue;
+}
+
+.users-pictures--four {
+  margin-bottom: 22px;
+  box-shadow: 0 0 0 1px blue;
+}
+
+.users-pictures--five {
+  margin-bottom: 22px;
+  box-shadow: 0 0 0 1px blue;
 }
 
 .comment--bg-grey {
@@ -30,11 +40,42 @@
 
 .comment {
   display: block;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-left: 17px;
   padding-bottom: 25px;
 
   text-align: left;
+}
+
+.comment--panorama {
+  position: relative;
+
+  display: block;
+
+  text-align: left;
+
+  &::before {
+    content: "Панорама дня";
+
+    position: absolute;
+    top: -140px;
+    right: 0px;
+
+    display: block;
+    width: 140px;
+    padding: 9px 0;
+
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    color: $white;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: $color-red;
+  }
 }
 
 .comment__item {
@@ -42,14 +83,16 @@
   padding: 0;
 
   font-size: 14px;
+  line-height: 16px;
   font-weight: bold;
 }
 
 .comment__author {
   display: inline-block;
   margin-left: 1px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-size: 12px;
+  line-height: 14px;
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -57,7 +100,7 @@
 .comment__text {
   width: 243px;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   padding: 0;
 
   line-height: 24px;
@@ -71,6 +114,7 @@
   padding-left: 32px;
 
   font-size: 12px;
+  line-height: 14px;
   color: $color-red;
   letter-spacing: 0.3px;
   text-transform: uppercase;
@@ -90,7 +134,7 @@
     background-position: center;
   }
 }
-
+/*==================================================*/
 @media (min-width: $tablet-width) {
   .users-pictures__wrapper {
     display: flex;
@@ -120,7 +164,6 @@
     align-content: stretch;
     margin-bottom: 0;
     padding-top: 28px;
-    //padding-bottom: 0;
   }
 
   .comment__item {
