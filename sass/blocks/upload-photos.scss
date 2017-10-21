@@ -3,13 +3,17 @@
   padding-top: 22px;
 }
 
+.upload-photos__container {
+  width: auto;
+  padding-bottom: 2px;
+
+  background-color: $bg-grey;
+}
+
 .upload-photos__wrapper {
   display: block;
   width: 100%;
   padding-top: 18px;
-  background-color: $bg-grey;
-
-  box-shadow: 0 0 0 1px blue;
 }
 
 .upload-photos__text {
@@ -26,9 +30,8 @@
 /*===================================================*/
 @media (min-width: $tablet-width) {
   .upload-photos {
-    width: 660px;
-    margin: 0 auto;
-    padding-top: 35px;
+    width: 100%;
+    padding-top: 66px;
   }
 
   .upload-photos__wrapper {
@@ -36,37 +39,30 @@
     flex-direction: row;
     justify-content: space-between;
 
-    width: 100%;
+    width: 660px;
+    margin: 0 auto;
   }
 
   .upload-photos__image {
     width: 280px;
-    margin: 0;
-    padding: 0;
   }
 
   .upload-photos__item {
-    padding: 60px 0 0;
+    padding-top: 40px;
+    padding-right: 0;
   }
 
   .upload-photos__text {
-    margin-bottom: 45px;
+    width: 430px;
+    margin-bottom: 68px;
 
     font-size: 18px;
-
-    & br:last-child {
-      display: none;
-    }
   }
 }
-
+/*===================================================*/
 @media (min-width: $desktop-width) {
   .upload-photos {
-    width: 960px;
-
-    &.container {
-      padding: 0 10px;
-    }
+    padding-top: 20px;
   }
 
   .upload-photos__text {
@@ -74,12 +70,18 @@
     margin-bottom: 66px;
   }
 
+  .upload-photos__container {
+    width: 940px;
+    margin: 0 auto;
+  }
+
   .upload-photos__wrapper {
-    padding-left: 80px;
-    padding-right: 54px;
+    margin: 0;
   }
 
   .upload-photos__item {
     padding-top: 37px;
+    padding-left: 80px;
+    padding-right: 61px;
   }
 }

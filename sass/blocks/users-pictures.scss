@@ -9,27 +9,22 @@
   margin-bottom: 20px;
 
   background-color: $bg-grey;
-  box-shadow: 0 0 0 1px green;
 }
 
 .users-pictures--two {
   margin-bottom: 23px;
-  box-shadow: 0 0 0 1px blue;
 }
 
 .users-pictures--three {
   margin-bottom: 21px;
-  box-shadow: 0 0 0 1px blue;
 }
 
 .users-pictures--four {
   margin-bottom: 22px;
-  box-shadow: 0 0 0 1px blue;
 }
 
 .users-pictures--five {
   margin-bottom: 22px;
-  box-shadow: 0 0 0 1px blue;
 }
 
 .comment--bg-grey {
@@ -143,35 +138,39 @@
     justify-content: space-between;
 
     width: 660px;
-    margin-bottom: 12px; // Временно!-----
+    margin: 0 auto;
   }
 
   .users-pictures {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
+  }
 
-    &:nth-child(2) {
-      margin-bottom: 25px;
-    }
-
-    &:nth-child(5) {
-      margin-bottom: 25px;
-    }
+  .users-pictures--three,
+  .users-pictures--four {
+    margin-bottom: 23px;
   }
 
   .comment {
     display: flex;
     flex-direction: column;
     align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: 0;
-    padding-top: 28px;
+    padding-top: 25px;
+    padding-left: 28px;
   }
 
   .comment__item {
     margin-left: 0;
   }
 
+  .comment__text {
+    margin-bottom: 18px;
+  }
+
   .comment__value {
-    padding-left: 11px;
+    padding-left: 0;
     padding-right: 29px;
 
     &::before {
@@ -199,15 +198,20 @@
   }
 
   .comment--panorama {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
     width: 620px;
-    padding-top: 60px; //временно!!!--------------
+    padding-top: 25px;
     padding-left: 28px;
     padding-right: 29px;
+    padding-bottom: 27px;
+
+    &::before {
+      top: -454px;
+      right: 0;
+    }
   }
 
   .comment__item--panorama {
@@ -216,37 +220,27 @@
 
   .comment__text--panorama {
     order: 2;
+
+    width: 520px;
     margin-bottom: 0;
   }
 
-  .comment__text--item {
-    width: 520px;
-  }
-
   .comment__value--panorama {
-    padding-right: 29px;
+    padding-top: 2px;
+    padding-right: 32px;
 
     &::before {
       display: none;
     }
 
     &::after {
-      content: "";
-
-      position: absolute;
       top: 0;
-      right: 0;
+      right: 3px;
 
-      width: 13px;
-      height: 13px;
-
-      background-image: url("../img/icon-heart.svg");
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
 }
-
+/*==================================================*/
 @media (min-width: $desktop-width) {
   .users-pictures__wrapper {
     width: 960px;
@@ -258,25 +252,20 @@
   }
 
   .users-pictures {
-    margin-bottom: 60px;
-
-    &:nth-child(2) {
-      margin-bottom: 60px;
-    }
-
-    &:nth-child(5) {
-      margin-bottom: 60px;
-    }
+    margin-bottom: 56px;
   }
 
   .comment--panorama {
     width: 940px;
-    padding-top: 27px;
+    padding-top: 24px;
     padding-left: 28px;
     padding-right: 29px;
+    padding-bottom: 24px;
   }
 
   .comment__text--panorama {
-    width: 888px;
+    width: 880px;
+
+    letter-spacing: 0.26px;
   }
 }

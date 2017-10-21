@@ -18,10 +18,6 @@
   letter-spacing: 0.3px;
 }
 
-.photo-day__image {
-  width: 100%;
-}
-
 .promo__title--form {
   margin-bottom: 38px;
 }
@@ -44,21 +40,29 @@
 
     font-size: 18px;
 
-
     & br {
       display: none;
     }
   }
+  .photo-day__image {
+    display: block;
+    width: 100%;
+  }
 
   .promo__title--form {
-    margin-bottom: 67px;
+    margin-bottom: 97px;
   }
 }
 /*=================================================*/
 @media (min-width: $desktop-width) {
+  .promo {
+    margin-bottom: 50px;
+  }
+
   .promo__title {
     width: 580px;
-    margin-bottom: 88px;
+    margin-top: 91px;
+    margin-bottom: 90px;
 
     letter-spacing: 0.4px;
   }

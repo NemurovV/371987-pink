@@ -377,7 +377,12 @@ input[class="visually-hidden"] {
     align-items: baseline;
 
     width: 660px;
-    margin-bottom: 3px;
+    margin-bottom: 9px;
+  }
+
+  .postscript {
+    margin: 0;
+    margin-right: -4px;
   }
 }
 /*================================================*/
@@ -476,10 +481,11 @@ input[class="visually-hidden"] {
 
   .field-set__item--track-record {
     display: flex; /*==========================*/
-    width: 205px;
-    height: 50px;
+    //width: 205px;
+    //height: 50px;
     box-shadow: 0 0 0 1px red;
     margin-bottom: 10px;
+    flex-basis: calc(100% / 3);
   }
 
   .field-set--text-area {

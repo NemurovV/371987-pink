@@ -54,7 +54,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
+/*==================================================*/
 @media (min-width: $tablet-width) {
   .filters {
     display: flex;
@@ -86,20 +86,20 @@
     background-size: 38%;
   }
 }
-
+/*==================================================*/
 @media (min-width: $desktop-width) {
   .filters__label--resize {
-    top: 12px;
-    left: 7px;
+    top: 14px;
+    left: 9px;
 
-    background-size: 100%;
+    background-size: 108%;
   }
 
   .filters__label--fill {
     top: 13px;
     left: 10px;
 
-    background-size: 100%;
+    background-size: 110%;
   }
 
   .filters__label--contrast {
