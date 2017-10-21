@@ -398,6 +398,7 @@ input[class="visually-hidden"] {
 
   .field-set {
     width: 960px;
+    margin: 0 auto;
   }
 
   .field-set__btn {
@@ -458,8 +459,16 @@ input[class="visually-hidden"] {
     margin-top: 4px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 0;
     padding-top: 34px;
+    padding-bottom: 0;
+  }
+
+  .flex-wrap {
+    display: flex; /*для хрома*/
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
   }
 
   .field-set__item--contacts {
@@ -468,24 +477,32 @@ input[class="visually-hidden"] {
     padding: 0;
   }
 
+  .field-set__lable--contacts {
+    margin-bottom: 58px;
+  }
+
+  .field-set__wrapper--track-record {
+    padding-top: 20px;
+  }
+
   .field-set--track-record {
     display: flex; /*==========================*/
     flex-direction: row;
     flex-wrap: wrap;
 
     &.container {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 
   .field-set__item--track-record {
     display: flex; /*==========================*/
-    //width: 205px;
+    width: 300px;
     //height: 50px;
     box-shadow: 0 0 0 1px red;
     margin-bottom: 10px;
-    flex-basis: calc(100% / 3);
+    //flex-basis: calc(100% / 3);
   }
 
   .field-set--text-area {
