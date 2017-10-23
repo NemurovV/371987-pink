@@ -488,7 +488,7 @@ input[class="visually-hidden"] {
   .field-set__item--track-record {
     flex-basis: calc(100% / 3);
 
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-bottom: 10px;
   }
 
@@ -541,6 +541,7 @@ input[class="visually-hidden"] {
     width: 960px;
     margin-top: 65px;
     margin-bottom: 0;
+
     &.container {
       padding-left: 10px;
       padding-right: 10px;
