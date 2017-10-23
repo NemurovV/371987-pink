@@ -82,3 +82,10 @@
     margin-left: -16px;
   }
 }
+/*===================================================*/
+@media (min-width: $desktop-width) {
+  .social {
+    margin-left: 12px;
+    padding-top: 32px;
+  }
+}

@@ -401,15 +401,6 @@ input[class="visually-hidden"] {
     margin: 0 auto;
   }
 
-  .field-set__btn {
-    width: 960px;
-
-    &.container {
-      padding-left: 10px;
-      padding-right: 6px;
-    }
-  }
-
   .field-set__wrapper--apps {
     margin: 0;
   }
@@ -452,19 +443,15 @@ input[class="visually-hidden"] {
   }
 
   .field-set--contacts {
-    display: flex; /*==========================*/
-    flex-direction: row;
-    justify-content: space-between;
-
     margin-top: 4px;
     margin-left: 10px;
     margin-right: 10px;
-    padding-top: 34px;
+    padding-top: 35px;
     padding-bottom: 0;
   }
 
-  .flex-wrap {
-    display: flex; /*для хрома*/
+  .flex-wrap {/*для хрома*/
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
@@ -472,35 +459,68 @@ input[class="visually-hidden"] {
   }
 
   .field-set__item--contacts {
-    width: 373px; /*==========================*/
+    width: 373px;
     margin: 0;
     padding: 0;
   }
 
   .field-set__lable--contacts {
-    margin-bottom: 58px;
+    margin-bottom: 21px;
+  }
+
+  .field-set__input--contacts {
+    margin-bottom: 16px;
   }
 
   .field-set__wrapper--track-record {
-    padding-top: 20px;
+    padding-top: 57px;
   }
 
   .field-set--track-record {
-    display: flex; /*==========================*/
-    flex-direction: row;
-    flex-wrap: wrap;
-
     &.container {
-      padding-left: 0;
+      width: 940px;
+      margin-left: 10px;
+      padding-left: 20px;
       padding-right: 0;
     }
   }
 
   .field-set__item--track-record {
-    display: flex; /*==========================*/
-    width: 300px;
-    box-shadow: 0 0 0 1px red;
+    flex-basis: calc(100% / 3);
+
+    padding-bottom: 0px;
     margin-bottom: 10px;
+  }
+
+  .field-set__item--track-record-one {
+    order: -1;
+    margin-bottom: 62px;
+  }
+
+  .field-set__item--track-record-two {
+    order: 1;
+    margin-bottom: 57px;
+  }
+
+  .field-set__item--track-record-three {
+    padding-left: 10px;
+  }
+
+  .field-set__item--track-record-four {
+    order: 2;
+    padding-left: 10px;
+  }
+
+  .field-set__item--track-record-six {
+    order: 2;
+  }
+
+  .field-set__lable--item-track-record {
+    margin-bottom: 0;
+  }
+
+  .field-set__heading--text-area {
+    margin-bottom: 35px;
   }
 
   .field-set--text-area {
@@ -512,6 +532,19 @@ input[class="visually-hidden"] {
   .field-set__input--text-area {
     min-height: 126px;
     margin-bottom: 36px;
+    padding-left: 17px;
+
+    letter-spacing: 0.5px;
+  }
+
+  .field-set__btn {
+    width: 960px;
+    margin-top: 65px;
+    margin-bottom: 0;
+    &.container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .postscript {
